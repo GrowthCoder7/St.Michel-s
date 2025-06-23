@@ -42,7 +42,7 @@ const Programs: React.FC = () => {
       <div className="container">
         <div className="section-title">
           <h2>Our Educational Programs</h2>
-          <p>Discover the diverse learning opportunities available at Brighton Academy</p>
+          <p>Discover the diverse learning opportunities available at St. Michel's</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -70,7 +70,7 @@ const Programs: React.FC = () => {
             <div className="p-8 lg:p-12">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Ready to Join Our Community?</h3>
               <p className="text-gray-300 mb-6">
-                Brighton Academy is now accepting applications for the upcoming academic year. 
+                St. Michel's is now accepting applications for the upcoming academic year. 
                 Start your journey with us and discover the difference a quality education can make.
               </p>
               <div className="flex flex-wrap gap-4">

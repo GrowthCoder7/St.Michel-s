@@ -96,7 +96,7 @@ const GalleryPage: React.FC = () => {
   const categories = ['All', 'Campus Life', 'Academics', 'Sports', 'Arts', 'Events'];
 
   useEffect(() => {
-    document.title = 'Gallery | Brighton Academy';
+    document.title = 'Gallery | St. Michel\'s';
   }, []);
 
   useEffect(() => {
@@ -115,7 +115,7 @@ const GalleryPage: React.FC = () => {
         <div className="container relative text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Photo Gallery</h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            A visual journey through life at Brighton Academy
+            A visual journey through life at St. Michel's
           </p>
         </div>
       </section>

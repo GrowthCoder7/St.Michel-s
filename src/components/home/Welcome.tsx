@@ -11,7 +11,7 @@ const Welcome: React.FC = () => {
             <div className="relative">
               <img 
                 src="https://images.pexels.com/photos/5905507/pexels-photo-5905507.jpeg?auto=compress&cs=tinysrgb&w=1600" 
-                alt="Principal of Brighton Academy" 
+                alt="Principal of St. Michel's" 
                 className="rounded-lg shadow-xl max-w-full h-auto object-cover"
               />
               <div className="absolute -bottom-6 -right-6 bg-accent p-4 rounded-lg shadow-lg">
@@ -27,13 +27,13 @@ const Welcome: React.FC = () => {
               
               <div className="mb-6 text-gray-700 space-y-4">
                 <p>
-                  Welcome to Brighton Academy, where we foster a community of learning, growth, and achievement. For over 35 years, we have been dedicated to providing exceptional education that prepares students for success in college and beyond.
+                  Welcome to St. Michel's, where we foster a community of learning, growth, and achievement. For over 35 years, we have been dedicated to providing exceptional education that prepares students for success in college and beyond.
                 </p>
                 <p>
                   Our approach combines academic rigor with character development, ensuring that our graduates are not only knowledgeable but also compassionate and responsible citizens. Our dedicated faculty and staff create a supportive environment where students can discover their passions and develop their talents.
                 </p>
                 <p>
-                  At Brighton Academy, we believe that education extends beyond the classroom. Through our comprehensive programs in arts, athletics, and community service, we offer students diverse opportunities to explore their interests and build well-rounded skill sets.
+                  At St. Michel's, we believe that education extends beyond the classroom. Through our comprehensive programs in arts, athletics, and community service, we offer students diverse opportunities to explore their interests and build well-rounded skill sets.
                 </p>
               </div>
               
@@ -45,7 +45,7 @@ const Welcome: React.FC = () => {
                 />
                 <div>
                   <h4 className="font-semibold text-lg">Dr. Sarah Mitchell</h4>
-                  <p className="text-gray-600">Principal, Brighton Academy</p>
+                  <p className="text-gray-600">Principal, St. Michel's</p>
                 </div>
               </div>
               

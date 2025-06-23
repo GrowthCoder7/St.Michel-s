@@ -22,7 +22,7 @@ const ContactPage: React.FC = () => {
   });
 
   useEffect(() => {
-    document.title = 'Contact Us | Brighton Academy';
+    document.title = 'Contact Us | St. Michel\'s';
     // Initialize EmailJS
     emailjs.init("YOUR_PUBLIC_KEY");
   }, []);

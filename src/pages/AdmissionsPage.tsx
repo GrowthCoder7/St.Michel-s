@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 const AdmissionsPage: React.FC = () => {
   useEffect(() => {
-    document.title = 'Admissions | Brighton Academy';
+    document.title = 'Admissions | St. Michel\'s';
   }, []);
 
   return (
@@ -13,7 +13,7 @@ const AdmissionsPage: React.FC = () => {
         <div className="container relative text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Admissions</h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Join our community of learners and begin your journey at Brighton Academy
+            Join our community of learners and begin your journey at St. Michel's
           </p>
         </div>
       </section>
@@ -22,9 +22,9 @@ const AdmissionsPage: React.FC = () => {
       <section className="section bg-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Welcome to Brighton Academy Admissions</h2>
+            <h2 className="text-3xl font-bold mb-6">Welcome to St. Michel's Admissions</h2>
             <p className="text-gray-700 mb-8">
-              Thank you for your interest in Brighton Academy. We are committed to providing an exceptional educational experience that nurtures intellectual curiosity, character development, and a love of learning. Our admissions process is designed to identify students who will thrive in our challenging and supportive environment.
+              Thank you for your interest in St. Michel's. We are committed to providing an exceptional educational experience that nurtures intellectual curiosity, character development, and a love of learning. Our admissions process is designed to identify students who will thrive in our challenging and supportive environment.
             </p>
             <div className="flex justify-center">
               <a href="#apply" className="btn-primary mr-4">Apply Now</a>
@@ -318,7 +318,7 @@ const AdmissionsPage: React.FC = () => {
                 <div className="mt-8">
                   <h4 className="font-semibold mb-3">Payment Plans</h4>
                   <p className="text-gray-700 mb-4">
-                    Brighton Academy offers flexible payment options to accommodate families' financial planning:
+                    St. Michel's offers flexible payment options to accommodate families' financial planning:
                   </p>
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-start">
@@ -339,7 +339,7 @@ const AdmissionsPage: React.FC = () => {
                 <div className="mt-8">
                   <h4 className="font-semibold mb-3">Financial Aid</h4>
                   <p className="text-gray-700">
-                    Brighton Academy is committed to making quality education accessible. Limited financial aid is available based on demonstrated need. Please contact our admissions office for more information about our financial aid application process.
+                    St. Michel's is committed to making quality education accessible. Limited financial aid is available based on demonstrated need. Please contact our admissions office for more information about our financial aid application process.
                   </p>
                 </div>
               </div>
@@ -353,7 +353,7 @@ const AdmissionsPage: React.FC = () => {
         <div className="container">
           <div className="section-title">
             <h2>Apply Now</h2>
-            <p>Begin your journey at Brighton Academy</p>
+            <p>Begin your journey at St. Michel's</p>
           </div>
 
           <div className="max-w-3xl mx-auto bg-gray-50 p-8 rounded-lg">
@@ -516,7 +516,7 @@ const AdmissionsPage: React.FC = () => {
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <h3 className="text-lg font-semibold mb-2">Do you offer financial aid?</h3>
               <p className="text-gray-700">
-                Yes, Brighton Academy offers need-based financial aid to qualified families. The financial aid application process is separate from the admissions process. We encourage families to apply for aid at the same time they submit their application for admission.
+                Yes, St. Michel's offers need-based financial aid to qualified families. The financial aid application process is separate from the admissions process. We encourage families to apply for aid at the same time they submit their application for admission.
               </p>
             </div>
             

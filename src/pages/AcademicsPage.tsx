@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 const AcademicsPage: React.FC = () => {
   useEffect(() => {
-    document.title = 'Academics | Brighton Academy';
+    document.title = 'Academics | St. Michel\'s';
   }, []);
 
   return (
@@ -26,7 +26,7 @@ const AcademicsPage: React.FC = () => {
               <h2 className="text-3xl font-bold mb-6">Academic Excellence</h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  At Brighton Academy, we foster a learning environment that encourages intellectual curiosity, critical thinking, and academic excellence. Our comprehensive curriculum is designed to challenge students at every level while providing the support they need to succeed.
+                  At St. Michel's, we foster a learning environment that encourages intellectual curiosity, critical thinking, and academic excellence. Our comprehensive curriculum is designed to challenge students at every level while providing the support they need to succeed.
                 </p>
                 <p>
                   Our academic program is built on a strong foundation in core subjects including mathematics, science, language arts, social studies, and foreign languages. We complement these with enriching experiences in the arts, physical education, and technology.

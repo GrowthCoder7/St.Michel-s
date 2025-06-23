@@ -65,7 +65,7 @@ const AboutPage: React.FC = () => {
             <div className="relative animate-slide-up" style={{ animationDelay: '0.2s' }}>
               <img 
                 src="https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=1600" 
-                alt="Brighton Academy historic building" 
+                alt="St. Michel's historic building" 
                 className="rounded-lg shadow-xl"
               />
               <div className="absolute bottom-4 right-4 bg-white p-3 rounded shadow">
@@ -87,7 +87,7 @@ const AboutPage: React.FC = () => {
             <div className="bg-white p-8 rounded-lg shadow-md animate-slide-up">
               <h3 className="text-2xl font-bold mb-4 text-primary-900">Our Mission</h3>
               <p className="text-gray-700 mb-6">
-                Brighton Academy is dedicated to providing a comprehensive, challenging education that fosters intellectual curiosity, character development, and social responsibility. We strive to create a supportive learning environment where students can discover their passions, develop their talents, and prepare for success in college and beyond.
+                St. Michel's is dedicated to providing a comprehensive, challenging education that fosters intellectual curiosity, character development, and social responsibility. We strive to create a supportive learning environment where students can discover their passions, develop their talents, and prepare for success in college and beyond.
               </p>
               <div className="border-l-4 border-accent pl-4 italic text-gray-600">
                 "We educate the whole person—mind, body, and spirit—preparing students to thrive in an ever-changing world."
@@ -97,7 +97,7 @@ const AboutPage: React.FC = () => {
             <div className="bg-white p-8 rounded-lg shadow-md animate-slide-up" style={{ animationDelay: '0.2s' }}>
               <h3 className="text-2xl font-bold mb-4 text-primary-900">Our Vision</h3>
               <p className="text-gray-700 mb-6">
-                We envision Brighton Academy as a beacon of educational excellence where students from diverse backgrounds come together to learn, grow, and prepare to make meaningful contributions to society. Our graduates will be known not only for their academic achievements but also for their integrity, leadership, and commitment to serving others.
+                We envision St. Michel's as a beacon of educational excellence where students from diverse backgrounds come together to learn, grow, and prepare to make meaningful contributions to society. Our graduates will be known not only for their academic achievements but also for their integrity, leadership, and commitment to serving others.
               </p>
               <div className="border-l-4 border-accent pl-4 italic text-gray-600">
                 "To be recognized globally as a school that nurtures future leaders who combine academic excellence with moral purpose."
@@ -112,7 +112,7 @@ const AboutPage: React.FC = () => {
         <div className="container">
           <div className="section-title">
             <h2>Our Leadership</h2>
-            <p>Meet the dedicated professionals guiding Brighton Academy</p>
+            <p>Meet the dedicated professionals guiding St. Michel's</p>
           </div>
           
           <div className="text-center py-12">

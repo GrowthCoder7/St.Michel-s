@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 const StudentLifePage: React.FC = () => {
   useEffect(() => {
-    document.title = 'Student Life | Brighton Academy';
+    document.title = 'Student Life | St. Michel\'s';
   }, []);
 
   return (
@@ -13,7 +13,7 @@ const StudentLifePage: React.FC = () => {
         <div className="container relative text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Student Life</h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Discover the vibrant community and activities that make Brighton Academy special
+            Discover the vibrant community and activities that make St. Michel's special
           </p>
         </div>
       </section>
@@ -26,7 +26,7 @@ const StudentLifePage: React.FC = () => {
               <h2 className="text-3xl font-bold mb-6">A Well-Rounded Experience</h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  At Brighton Academy, we believe that education extends beyond the classroom. Our robust student life program provides opportunities for students to explore their interests, develop their talents, and build lasting friendships.
+                  At St. Michel's, we believe that education extends beyond the classroom. Our robust student life program provides opportunities for students to explore their interests, develop their talents, and build lasting friendships.
                 </p>
                 <p>
                   From arts and athletics to clubs and community service, we offer a wide range of extracurricular activities that complement our academic program. These experiences help students develop important life skills such as leadership, teamwork, and time management.
@@ -182,7 +182,7 @@ const StudentLifePage: React.FC = () => {
 
           <div className="mt-12 text-center">
             <p className="text-gray-700 mb-6">
-              This is just a sampling of the many clubs and activities available at Brighton Academy. We also encourage students to propose new clubs based on their interests.
+              This is just a sampling of the many clubs and activities available at St. Michel's. We also encourage students to propose new clubs based on their interests.
             </p>
             <a href="#" className="btn-outline">
               View All Clubs & Activities
@@ -204,7 +204,7 @@ const StudentLifePage: React.FC = () => {
               <div className="bg-gray-50 p-8 rounded-lg">
                 <h3 className="text-2xl font-bold mb-4">Our Athletic Philosophy</h3>
                 <p className="text-gray-700 mb-6">
-                  Brighton Academy's athletic program is designed to complement our academic mission by promoting physical fitness, character development, and sportsmanship. We believe that participation in athletics teaches valuable life lessons such as teamwork, perseverance, and goal-setting.
+                  St. Michel's's athletic program is designed to complement our academic mission by promoting physical fitness, character development, and sportsmanship. We believe that participation in athletics teaches valuable life lessons such as teamwork, perseverance, and goal-setting.
                 </p>
                 <p className="text-gray-700 mb-6">
                   Our coaches are experienced educators who prioritize skill development, safety, and positive team culture. They inspire athletes to strive for excellence while maintaining perspective on the broader educational goals of our school.
@@ -314,7 +314,7 @@ const StudentLifePage: React.FC = () => {
                 <div className="bg-white rounded-lg shadow-md overflow-hidden">
                   <img 
                     src="https://images.pexels.com/photos/8364888/pexels-photo-8364888.jpeg?auto=compress&cs=tinysrgb&w=1600" 
-                    alt="Brighton Academy Athletics" 
+                    alt="St. Michel's Athletics" 
                     className="w-full h-48 object-cover"
                   />
                   <div className="p-6">

@@ -48,7 +48,7 @@ const Gallery: React.FC = () => {
       <div className="container">
         <div className="section-title">
           <h2>Our School Gallery</h2>
-          <p>Take a visual journey through life at Brighton Academy</p>
+          <p>Take a visual journey through life at St. Michel's</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

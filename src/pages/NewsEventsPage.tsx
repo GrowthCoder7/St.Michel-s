@@ -5,7 +5,7 @@ import { NewsItem, Event } from '../types';
 const newsItems: NewsItem[] = [
   {
     id: '1',
-    title: 'Brighton Academy Wins National Science Competition',
+    title: 'St. Michel\'s Wins National Science Competition',
     date: 'May 15, 2025',
     excerpt: 'Our students brought home the first place trophy in the National Science Olympiad, showcasing exceptional talent and dedication.',
     category: 'Achievement',
@@ -53,7 +53,7 @@ const newsItems: NewsItem[] = [
   },
   {
     id: '7',
-    title: 'Brighton Academy Hosts International Exchange Students',
+    title: 'St. Michel\'s Hosts International Exchange Students',
     date: 'March 28, 2025',
     excerpt: 'We welcomed exchange students from three countries this month, enriching our school community with diverse perspectives and cultures.',
     category: 'Campus Life',
@@ -123,7 +123,7 @@ const NewsEventsPage: React.FC = () => {
   const categories = ['All', 'Achievement', 'Events', 'Announcements', 'Facilities', 'Campus Life', 'Arts'];
 
   useEffect(() => {
-    document.title = 'News & Events | Brighton Academy';
+    document.title = 'News & Events | St. Michel\'s';
   }, []);
 
   useEffect(() => {
@@ -155,7 +155,7 @@ const NewsEventsPage: React.FC = () => {
         <div className="container relative text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">News & Events</h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Stay updated with the latest news and upcoming events at Brighton Academy
+            Stay updated with the latest news and upcoming events at St. Michel's
           </p>
         </div>
       </section>

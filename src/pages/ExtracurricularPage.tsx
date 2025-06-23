@@ -59,7 +59,7 @@ const ExtracurricularPage: React.FC = () => {
   });
 
   useEffect(() => {
-    document.title = 'Extracurricular & Activities | Brighton Academy';
+    document.title = 'Extracurricular & Activities | St. Michel\'s';
   }, []);
 
   return (
@@ -93,7 +93,7 @@ const ExtracurricularPage: React.FC = () => {
           >
             <h2 className="text-3xl font-bold mb-6">Enriching Student Life</h2>
             <p className="text-gray-700 mb-8">
-              At Brighton Academy, we believe that education extends beyond the classroom. Our diverse range of extracurricular activities provides students with opportunities to discover their passions, develop leadership skills, and build lasting friendships.
+              At St. Michel's, we believe that education extends beyond the classroom. Our diverse range of extracurricular activities provides students with opportunities to discover their passions, develop leadership skills, and build lasting friendships.
             </p>
           </motion.div>
 

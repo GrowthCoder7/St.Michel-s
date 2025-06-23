@@ -17,7 +17,7 @@ const slides: HeroSlide[] = [
   {
     id: 1,
     image: 'https://images.pexels.com/photos/8617957/pexels-photo-8617957.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    title: 'Welcome to Brighton Academy',
+    title: 'Welcome to St. Michel\'s',
     subtitle: 'Where Knowledge Meets Excellence',
     cta: {
       text: 'Apply Now',

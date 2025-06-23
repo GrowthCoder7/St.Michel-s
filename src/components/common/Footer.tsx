@@ -16,12 +16,12 @@ const Footer: React.FC = () => {
             <Link to="/" className="flex items-center space-x-2 mb-4">
               <GraduationCap size={32} className="text-accent" />
               <div>
-                <h3 className="text-xl font-bold text-white">Brighton Academy</h3>
+                <h3 className="text-xl font-bold text-white">St. Michel's</h3>
                 <p className="text-xs text-gray-300">Excellence in Education</p>
               </div>
             </Link>
             <p className="text-gray-300 mb-6">
-              Brighton Academy is committed to providing quality education and fostering academic excellence in a supportive environment.
+              St. Michel's is committed to providing quality education and fostering academic excellence in a supportive environment.
             </p>
             <div className="flex space-x-4">
               <a href="https://facebook.com" className="text-gray-300 hover:text-accent transition-colors" aria-label="Facebook">
@@ -133,7 +133,7 @@ const Footer: React.FC = () => {
         <hr className="border-primary-800 my-8" />
 
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>© {currentYear} Brighton Academy. All rights reserved.</p>
+          <p>© {currentYear} St. Michel's. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</Link>
             <Link to="/terms-of-service" className="hover:text-accent transition-colors">Terms of Service</Link>
