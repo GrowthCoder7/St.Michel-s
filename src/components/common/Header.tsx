@@ -29,17 +29,17 @@ const navItems: NavItem[] = [
       { label: 'Apply Now', path: '/admissions#apply' },
     ]
   },
-  { 
-    label: 'Academics', 
-    path: '/academics',
-    children: [
-      { label: 'Curriculum', path: '/academics#curriculum' },
-      { label: 'Programs', path: '/academics#programs' },
-      { label: 'Calendar', path: '/academics#calendar' },
-    ]
-  },
+  // { 
+  //   label: 'Academics', 
+  //   path: '/academics',
+  //   children: [
+  //     { label: 'Curriculum', path: '/academics#curriculum' },
+  //     { label: 'Programs', path: '/academics#programs' },
+  //     { label: 'Calendar', path: '/academics#calendar' },
+  //   ]
+  // },
   { label: 'Facilities', path: '/facilities' },
-  // { label: 'Student Life', path: '/student-life' },
+  { label: 'Student Life', path: '/student-life' },
   { label: 'Gallery', path: '/gallery' },
   { label: 'News & Events', path: '/news-events' },
   { label: 'Contact', path: '/contact' },

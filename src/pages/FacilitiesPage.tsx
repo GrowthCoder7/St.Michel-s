@@ -217,7 +217,7 @@ const DepartmentsPage: React.FC = () => {
     {
       title: "Karate & Dance Classes",
       description: " For physical fitness and creative expression.",
-      image: "https://images.pexels.com/photos/7551659/pexels-photo-7551659.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      image: "Facilities/Karate.png",
       features: ["Self-Defense Skills", "Discipline", "Confidence Building"]
     },
     {
@@ -229,26 +229,19 @@ const DepartmentsPage: React.FC = () => {
     {
       title: "Scouts and Guides",
       description: "Instilling responsibility, leadership, and service values.",
-      image: "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      image: "Facilities/Scouts.png",
       features: ["Outdoor Skills", "Community Service", "Leadership Training"]
-    },
-    {
-      title: "Music Ensemble",
-      description: "Various musical groups including choir, band, and orchestra for different skill levels.",
-      image: "https://images.pexels.com/photos/164743/pexels-photo-164743.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      features: ["Concert Performances", "Music Theory", "Individual Coaching"]
-      
     },
     {
       title: "Cultural Activity Clubs",
       description: "Promoting talent in music, drama, drawing, and more.",
-      image: "https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      image: "Facilities/Cultural.png",
       features: ["Leadership Development", "Event Planning", "Community Service"]
     },
     {
       title: "Huge Play Area ",
       description: "For physical development and recreational activities.",
-      image: "https://images.pexels.com/photos/8566473/pexels-photo-8566473.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      image: "Facilities/PlayArea.png",
       features: ["Sports Activities", "Team Building", "Physical Fitness"]
     }
   ];

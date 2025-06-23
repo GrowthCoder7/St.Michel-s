@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import FAQAccordion from '../components/FAQAccordian'
 
 const AdmissionsPage: React.FC = () => {
   useEffect(() => {
@@ -348,6 +349,19 @@ const AdmissionsPage: React.FC = () => {
         </div>
       </section>
 
+      <section id="calendar" className="section bg-gray-50">
+        <div className="container">
+          <div className="section-title">
+            <h2>Academic Calendar</h2>
+            <p>Important dates for the school year</p>
+          </div>
+          
+          <div className="text-center py-12">
+            <p className="text-gray-500">Academic calendar content will be added here.</p>
+          </div>
+        </div>
+      </section>
+
       {/* Apply Now Section */}
       <section id="apply" className="section bg-white">
         <div className="container">
@@ -491,7 +505,8 @@ const AdmissionsPage: React.FC = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="section bg-gray-50">
+      <FAQAccordion />
+      {/* <section className="section bg-gray-50">
         <div className="container">
           <div className="section-title">
             <h2>Frequently Asked Questions</h2>
@@ -542,7 +557,7 @@ const AdmissionsPage: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

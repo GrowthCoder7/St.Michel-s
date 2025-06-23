@@ -10,7 +10,7 @@ import AboutPage from './pages/AboutPage';
 import AdmissionsPage from './pages/AdmissionsPage';
 import AcademicsPage from './pages/AcademicsPage';
 import FacilitiesPage from './pages/FacilitiesPage';
-import StudentLifePage from './pages/StudentLifePage';
+import StudentRulesPage from './pages/StudentRulesPage';
 import ExtracurricularPage from './pages/ExtracurricularPage';
 import GalleryPage from './pages/GalleryPage';
 import NewsEventsPage from './pages/NewsEventsPage';
@@ -28,7 +28,7 @@ function App() {
           <Route path="admissions" element={<AdmissionsPage />} />
           <Route path="academics" element={<AcademicsPage />} />
           <Route path="facilities" element={<FacilitiesPage />} />
-          <Route path="student-life" element={<StudentLifePage />} />
+          <Route path="student-life" element={<StudentRulesPage />} />
           <Route path="extracurricular" element={<ExtracurricularPage />} />
           <Route path="gallery" element={<GalleryPage />} />
           <Route path="news-events" element={<NewsEventsPage />} />

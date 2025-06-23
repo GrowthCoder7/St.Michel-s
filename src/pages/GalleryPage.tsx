@@ -4,70 +4,70 @@ import { GalleryItem } from '../types';
 const galleryItems: GalleryItem[] = [
   {
     id: '1',
-    image: 'https://images.pexels.com/photos/8363143/pexels-photo-8363143.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'Gallery/g1.png',
     category: 'Campus Life',
     title: 'Student Activities',
     description: 'Students engaging in various activities around campus.'
   },
   {
     id: '2',
-    image: 'https://images.pexels.com/photos/5211446/pexels-photo-5211446.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'Gallery/g2.png',
     category: 'Academics',
     title: 'Science Laboratory',
     description: 'Students conducting experiments in our state-of-the-art science lab.'
   },
   {
     id: '3',
-    image: 'https://images.pexels.com/photos/8363101/pexels-photo-8363101.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'Gallery/g3.png',
     category: 'Sports',
     title: 'Athletics Program',
     description: 'Our student athletes competing in various sports events.'
   },
   {
     id: '4',
-    image: 'https://images.pexels.com/photos/5212703/pexels-photo-5212703.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'Gallery/g4.png',
     category: 'Arts',
     title: 'Creative Expression',
     description: 'Students expressing themselves through various artistic mediums.'
   },
   {
     id: '5',
-    image: 'https://images.pexels.com/photos/5905502/pexels-photo-5905502.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'Gallery/g5.png',
     category: 'Events',
     title: 'School Celebrations',
     description: 'Special events and celebrations throughout the school year.'
   },
   {
     id: '6',
-    image: 'https://images.pexels.com/photos/8364026/pexels-photo-8364026.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'Gallery/g6.png',
     category: 'Campus Life',
     title: 'Library Resources',
     description: 'Our well-stocked library provides resources for research and reading.'
   },
   {
     id: '7',
-    image: 'https://images.pexels.com/photos/8364891/pexels-photo-8364891.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'Gallery/g7.png',
     category: 'Academics',
     title: 'Classroom Engagement',
     description: 'Interactive learning in our engaging classroom environments.'
   },
   {
     id: '8',
-    image: 'https://images.pexels.com/photos/8364884/pexels-photo-8364884.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'Gallery/g8.png',
     category: 'Arts',
     title: 'Music Program',
     description: 'Students developing their musical talents in our comprehensive music program.'
   },
   {
     id: '9',
-    image: 'https://images.pexels.com/photos/8365108/pexels-photo-8365108.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'Gallery/g9.png',
     category: 'Campus Life',
     title: 'Outdoor Learning',
     description: 'Students enjoying our beautiful campus during outdoor learning activities.'
   },
   {
     id: '10',
-    image: 'https://images.pexels.com/photos/8363144/pexels-photo-8363144.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'Gallery/g10.png',
     category: 'Events',
     title: 'Graduation Ceremony',
     description: 'Celebrating our seniors during the annual graduation ceremony.'

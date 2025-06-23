@@ -368,7 +368,7 @@ const AcademicsPage: React.FC = () => {
       </section>
 
       {/* This is a placeholder for Calendar Section */}
-      <section id="calendar" className="section bg-gray-50">
+      {/* <section id="calendar" className="section bg-gray-50">
         <div className="container">
           <div className="section-title">
             <h2>Academic Calendar</h2>
@@ -379,7 +379,7 @@ const AcademicsPage: React.FC = () => {
             <p className="text-gray-500">Academic calendar content will be added here.</p>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
