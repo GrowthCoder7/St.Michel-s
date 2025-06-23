@@ -3,7 +3,7 @@ import { MessageCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const FloatingWhatsApp: React.FC = () => {
-  const whatsappNumber = '+919876543210'; // Replace with your actual WhatsApp number
+  const whatsappNumber = '+919902699638'; // Replace with your actual WhatsApp number
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (

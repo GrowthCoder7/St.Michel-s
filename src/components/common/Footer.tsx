@@ -4,7 +4,7 @@ import { GraduationCap, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linke
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
-  const whatsappNumber = '+919876543210'; // Replace with your actual WhatsApp number
+  const whatsappNumber = '+919902699638'; // Replace with your actual WhatsApp number
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
   
   return (
