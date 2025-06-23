@@ -84,7 +84,7 @@ const Programs: React.FC = () => {
             </div>
             <div className="relative h-64 lg:h-auto">
               <img 
-                src="https://images.pexels.com/photos/1139321/pexels-photo-1139321.jpeg?auto=compress&cs=tinysrgb&w=1600" 
+                src="Home/Home_JOC.png" 
                 alt="Students walking on campus" 
                 className="absolute inset-0 w-full h-full object-cover"
               />

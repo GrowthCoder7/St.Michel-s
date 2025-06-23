@@ -16,7 +16,7 @@ interface HeroSlide {
 const slides: HeroSlide[] = [
   {
     id: 1,
-    image: 'https://images.pexels.com/photos/8617957/pexels-photo-8617957.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'Home/Hero1.jpg',
     title: 'Welcome to St. Michel\'s',
     subtitle: 'Where Knowledge Meets Excellence',
     cta: {
@@ -26,7 +26,7 @@ const slides: HeroSlide[] = [
   },
   {
     id: 2,
-    image: 'https://images.pexels.com/photos/5212695/pexels-photo-5212695.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'Home/Hero2.png',
     title: 'Discover Our Programs',
     subtitle: 'Comprehensive Education for Tomorrow\'s Leaders',
     cta: {
@@ -36,7 +36,7 @@ const slides: HeroSlide[] = [
   },
   {
     id: 3,
-    image: 'https://images.pexels.com/photos/8197527/pexels-photo-8197527.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'Home/Hero3.png',
     title: 'Join Our Community',
     subtitle: 'A Supportive Environment for Every Student',
     cta: {
@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${slide.image})` }}
           />
-          <div className="absolute inset-0 bg-primary-900/60" />
+          <div className="absolute inset-0 bg-primary-900/40" />
           
           <div className="relative h-full container flex flex-col justify-center">
             <div className="max-w-3xl text-white animate-fade-in">

@@ -10,42 +10,42 @@ const Welcome: React.FC = () => {
           <div className="animate-slide-up">
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/5905507/pexels-photo-5905507.jpeg?auto=compress&cs=tinysrgb&w=1600" 
+                src="Home/Welcome1.png" 
                 alt="Principal of St. Michel's" 
                 className="rounded-lg shadow-xl max-w-full h-auto object-cover"
               />
               <div className="absolute -bottom-6 -right-6 bg-accent p-4 rounded-lg shadow-lg">
-                <p className="text-sm font-medium text-primary-900">Established in 1985</p>
-                <p className="text-2xl font-bold text-primary-900">35+ Years of Excellence</p>
+                <p className="text-sm font-medium text-primary-900">Established in 1981</p>
+                <p className="text-2xl font-bold text-primary-900">45+ Years of Excellence</p>
               </div>
             </div>
           </div>
           
           <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
             <div className="lg:pl-8">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Welcome from the Principal</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Welcome from the Headmistress</h2>
               
-              <div className="mb-6 text-gray-700 space-y-4">
+              <div className="mb-6 text-sm font-semibold text-gray-700 space-y-4">
                 <p>
-                  Welcome to St. Michel's, where we foster a community of learning, growth, and achievement. For over 35 years, we have been dedicated to providing exceptional education that prepares students for success in college and beyond.
+                  Welcome to St. Michel’s English School, a nurturing ground for academic excellence, character development, and holistic education. Established under the Devi Education Society® in 1981, our school has grown to become one of the most respected institutions in Kanakapura, known for its strong values, dedicated faculty, and vibrant learning environment.
                 </p>
                 <p>
-                  Our approach combines academic rigor with character development, ensuring that our graduates are not only knowledgeable but also compassionate and responsible citizens. Our dedicated faculty and staff create a supportive environment where students can discover their passions and develop their talents.
+                  At St. Michel’s, we believe in empowering every child with the skills and confidence to thrive in a changing world. With a focus on both curricular and co-curricular activities, we ensure that our students are not just academically prepared, but also socially responsible and emotionally strong individuals.
                 </p>
                 <p>
-                  At St. Michel's, we believe that education extends beyond the classroom. Through our comprehensive programs in arts, athletics, and community service, we offer students diverse opportunities to explore their interests and build well-rounded skill sets.
+                  We are proud of our committed team of over 40+ teaching and 30+non-teaching staff who work together to uphold the school's mission of providing quality, inclusive, and value-based education. I warmly invite you to be a part of our school community where every child’s potential is nurtured and celebrated.
                 </p>
               </div>
               
               <div className="flex items-center mb-8">
                 <img 
                   src="https://images.pexels.com/photos/5212686/pexels-photo-5212686.jpeg?auto=compress&cs=tinysrgb&w=1600" 
-                  alt="Dr. Sarah Mitchell" 
+                  alt="VASANTHAMMA K" 
                   className="w-16 h-16 rounded-full object-cover mr-4"
                 />
                 <div>
-                  <h4 className="font-semibold text-lg">Dr. Sarah Mitchell</h4>
-                  <p className="text-gray-600">Principal, St. Michel's</p>
+                  <h4 className="font-semibold text-lg">VASANTHAMMA K</h4>
+                  <p className="text-gray-600">Headmistress, St. Michel's</p>
                 </div>
               </div>
               

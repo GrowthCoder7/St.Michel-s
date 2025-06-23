@@ -39,7 +39,7 @@ const navItems: NavItem[] = [
     ]
   },
   { label: 'Facilities', path: '/facilities' },
-  { label: 'Student Life', path: '/student-life' },
+  // { label: 'Student Life', path: '/student-life' },
   { label: 'Gallery', path: '/gallery' },
   { label: 'News & Events', path: '/news-events' },
   { label: 'Contact', path: '/contact' },
