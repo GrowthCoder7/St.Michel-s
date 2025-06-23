@@ -274,13 +274,13 @@ const DepartmentsPage: React.FC = () => {
     {
       title: "Digital Learning App",
       description: " Supporting home learning and academic revision.",
-      image: "https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      image: "Facilities/Digital.jpg",
       features: ["Digital Classrooms", "Coding Programs", "Tech Support"]
     },
     {
       title: "Student Communication App",
       description: "Updates, notices, homework, and attendance.",
-      image: "https://images.pexels.com/photos/8471822/pexels-photo-8471822.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      image: "Facilities/Student_Comm.jpg",
       features: ["IEP Support", "Learning Accommodations", "Specialized Instruction"]
     }
   ];
@@ -301,13 +301,13 @@ const DepartmentsPage: React.FC = () => {
     {
       title: "School Bus Tracking System",
       description: "Real-time location updates for parents.",
-      image: "https://images.pexels.com/photos/7092613/pexels-photo-7092613.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      image: "Facilities/BusTracking.png",
       features: ["GPS Tracking", "Parent Notifications", "Real-time Updates"]
     },
     {
       title: "Dedicated Staff",
       description: "40+ Teaching Staff and 30+ Non-Teaching Staff ensuring quality education and care.",
-      image: "https://images.pexels.com/photos/8471816/pexels-photo-8471816.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      image: "Facilities/Staff.jpg",
       features: ["Trained Personnel", "Experienced Teachers", "Caring Staff"]
     }
   ];

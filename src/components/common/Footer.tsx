@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { GraduationCap, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin, ArrowRight, MessageCircle } from 'lucide-react';
+import { GraduationCap, Phone, Mail, MapPin, Facebook, Instagram, Youtube, ArrowRight, MessageCircle } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -24,18 +24,16 @@ const Footer: React.FC = () => {
               St. Michel's is committed to providing quality education and fostering academic excellence in a supportive environment.
             </p>
             <div className="flex space-x-4">
-              <a href="https://facebook.com" className="text-gray-300 hover:text-accent transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/share/1EUKC8yArG/" className="text-gray-300 hover:text-accent transition-colors" aria-label="Facebook">
                 <Facebook size={20} />
               </a>
-              <a href="https://twitter.com" className="text-gray-300 hover:text-accent transition-colors" aria-label="Twitter">
-                <Twitter size={20} />
+              <a href="https://youtube.com/@st.michelsenglishschoolkan7277?feature=shared" className="text-gray-300 hover:text-accent transition-colors" aria-label="Twitter">
+                <Youtube size={20} />
               </a>
-              <a href="https://instagram.com" className="text-gray-300 hover:text-accent transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/st.michels.kanakapura?igsh=MW9uMDFhNnV2dDYycA==" className="text-gray-300 hover:text-accent transition-colors" aria-label="Instagram">
                 <Instagram size={20} />
               </a>
-              <a href="https://linkedin.com" className="text-gray-300 hover:text-accent transition-colors" aria-label="LinkedIn">
-                <Linkedin size={20} />
-              </a>
+              
               <a href={whatsappLink} className="text-gray-300 hover:text-accent transition-colors" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
                 <MessageCircle size={20} />
               </a>
@@ -91,20 +89,20 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={18} className="text-accent mr-3 mt-1 flex-shrink-0" />
-                <span className="text-gray-300">BMSIT&M Campus, Doddaballapur Main Road, Avalahalli, Yelahanka, Bengaluru, Karnataka 560064</span>
+                <span className="text-gray-300">St Michael's English School, Mysore Rd, Kanakapura, Karnataka 562117</span>
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="text-accent mr-3 flex-shrink-0" />
-                <a href="tel:+918026662222" className="text-gray-300 hover:text-accent transition-colors">
-                  +91 (80) 2666-2222
+                <a href="tel:+919902699638" className="text-gray-300 hover:text-accent transition-colors">
+                  +91 99026 99638
                 </a>
               </li>
-              <li className="flex items-center">
+              {/* <li className="flex items-center">
                 <Mail size={18} className="text-accent mr-3 flex-shrink-0" />
                 <a href="mailto:info@brightonacademy.edu" className="text-gray-300 hover:text-accent transition-colors">
                   info@brightonacademy.edu
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
