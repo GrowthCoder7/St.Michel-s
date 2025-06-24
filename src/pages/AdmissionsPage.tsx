@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
-import FAQAccordion from '../components/FAQAccordian'
+import React, { useEffect } from "react";
+import FAQAccordion from "../components/FAQAccordian";
+import Calendar from "../components/Calendar";
 
 const AdmissionsPage: React.FC = () => {
   useEffect(() => {
-    document.title = 'Admissions | St. Michel\'s';
+    document.title = "Admissions | St. Michel's";
   }, []);
 
   return (
@@ -12,9 +13,12 @@ const AdmissionsPage: React.FC = () => {
       <section className="relative pt-32 pb-20 bg-primary-900">
         <div className="absolute inset-0 bg-primary-900 opacity-90"></div>
         <div className="container relative text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Admissions</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+            Admissions
+          </h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Join our community of learners and begin your journey at St. Michel's
+            Join our community of learners and begin your journey at St.
+            Michel's
           </p>
         </div>
       </section>
@@ -23,13 +27,23 @@ const AdmissionsPage: React.FC = () => {
       <section className="section bg-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Welcome to St. Michel's Admissions</h2>
+            <h2 className="text-3xl font-bold mb-6">
+              Welcome to St. Michel's Admissions
+            </h2>
             <p className="text-gray-700 mb-8">
-              Thank you for your interest in St. Michel's. We are committed to providing an exceptional educational experience that nurtures intellectual curiosity, character development, and a love of learning. Our admissions process is designed to identify students who will thrive in our challenging and supportive environment.
+              Thank you for your interest in St. Michel's. We are committed to
+              providing an exceptional educational experience that nurtures
+              intellectual curiosity, character development, and a love of
+              learning. Our admissions process is designed to identify students
+              who will thrive in our challenging and supportive environment.
             </p>
             <div className="flex justify-center">
-              <a href="#apply" className="btn-primary mr-4">Apply Now</a>
-              <a href="#process" className="btn-outline">Learn More</a>
+              <a href="#apply" className="btn-primary mr-4">
+                Apply Now
+              </a>
+              <a href="#process" className="btn-outline">
+                Learn More
+              </a>
             </div>
           </div>
         </div>
@@ -52,9 +66,14 @@ const AdmissionsPage: React.FC = () => {
               <div className="relative mb-12">
                 <div className="md:flex items-center">
                   <div className="md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right">
-                    <h3 className="text-2xl font-bold text-primary-900 mb-3">1. Inquiry</h3>
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">
+                      1. Inquiry
+                    </h3>
                     <p className="text-gray-700">
-                      Begin your journey by submitting an inquiry form or contacting our admissions office. We'll provide information about our programs and answer your initial questions.
+                      Begin your journey by submitting an inquiry form or
+                      contacting our admissions office. We'll provide
+                      information about our programs and answer your initial
+                      questions.
                     </p>
                   </div>
                   <div className="absolute left-0 md:left-1/2 transform -translate-y-1/2 md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent border-4 border-white flex items-center justify-center text-white font-bold">
@@ -91,9 +110,13 @@ const AdmissionsPage: React.FC = () => {
                     2
                   </div>
                   <div className="md:w-1/2 md:pl-12 order-2 md:order-1">
-                    <h3 className="text-2xl font-bold text-primary-900 mb-3">2. Application</h3>
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">
+                      2. Application
+                    </h3>
                     <p className="text-gray-700">
-                      Submit a formal application along with the required documents. Our admissions team will review your application to ensure it's complete.
+                      Submit a formal application along with the required
+                      documents. Our admissions team will review your
+                      application to ensure it's complete.
                     </p>
                   </div>
                 </div>
@@ -103,9 +126,13 @@ const AdmissionsPage: React.FC = () => {
               <div className="relative mb-12">
                 <div className="md:flex items-center">
                   <div className="md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right">
-                    <h3 className="text-2xl font-bold text-primary-900 mb-3">3. Assessment</h3>
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">
+                      3. Assessment
+                    </h3>
                     <p className="text-gray-700">
-                      Students will complete grade-appropriate assessments to help us understand their academic strengths and areas for growth. This ensures proper placement in our programs.
+                      Students will complete grade-appropriate assessments to
+                      help us understand their academic strengths and areas for
+                      growth. This ensures proper placement in our programs.
                     </p>
                   </div>
                   <div className="absolute left-0 md:left-1/2 transform -translate-y-1/2 md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent border-4 border-white flex items-center justify-center text-white font-bold">
@@ -142,9 +169,13 @@ const AdmissionsPage: React.FC = () => {
                     4
                   </div>
                   <div className="md:w-1/2 md:pl-12 order-2 md:order-1">
-                    <h3 className="text-2xl font-bold text-primary-900 mb-3">4. Campus Visit</h3>
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">
+                      4. Campus Visit
+                    </h3>
                     <p className="text-gray-700">
-                      Schedule a visit to tour our campus, meet with faculty, and experience our learning environment. This is also an opportunity for an in-person interview.
+                      Schedule a visit to tour our campus, meet with faculty,
+                      and experience our learning environment. This is also an
+                      opportunity for an in-person interview.
                     </p>
                   </div>
                 </div>
@@ -154,9 +185,14 @@ const AdmissionsPage: React.FC = () => {
               <div className="relative">
                 <div className="md:flex items-center">
                   <div className="md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right">
-                    <h3 className="text-2xl font-bold text-primary-900 mb-3">5. Decision & Enrollment</h3>
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">
+                      5. Decision & Enrollment
+                    </h3>
                     <p className="text-gray-700">
-                      After reviewing all components of your application, we will notify you of our admission decision. Upon acceptance, you'll receive enrollment information to secure your place.
+                      After reviewing all components of your application, we
+                      will notify you of our admission decision. Upon
+                      acceptance, you'll receive enrollment information to
+                      secure your place.
                     </p>
                   </div>
                   <div className="absolute left-0 md:left-1/2 transform -translate-y-1/2 md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent border-4 border-white flex items-center justify-center text-white font-bold">
@@ -181,68 +217,85 @@ const AdmissionsPage: React.FC = () => {
       </section>
 
       {/* Requirements Section */}
-<section id="requirements" className="section bg-white">
-  <div className="container">
-    <div className="section-title">
-      <h2>Admission Requirements</h2>
-      <p>What we look for in prospective students</p>
-    </div>
+      <section id="requirements" className="section bg-white">
+        <div className="container">
+          <div className="section-title">
+            <h2>Admission Requirements</h2>
+            <p>What we look for in prospective students</p>
+          </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div className="bg-gray-50 p-6 rounded-lg h-full">
-        <h3 className="text-xl font-bold mb-4">Early Years Education</h3>
-        <ul className="space-y-3 text-gray-700">
-          <li className="flex items-start">
-            <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
-            <span>Baby Day Care</span>
-          </li>
-          <li className="flex items-start">
-            <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
-            <span>Baby Class</span>
-          </li>
-          <li className="flex items-start">
-            <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
-            <span>LKG & UKG</span>
-          </li>
-          <li className="flex items-start">
-            <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
-            <span>Nurturing through play, storytelling, and basic literacy/numeracy activities</span>
-          </li>
-          <li className="flex items-start">
-            <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
-            <span>Dedicated Nursery Play Area for motor skill development and joyful learning</span>
-          </li>
-          <li className="flex items-start">
-            <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
-            <span>Parent interview</span>
-          </li>
-        </ul>
-      </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-gray-50 p-6 rounded-lg h-full">
+              <h3 className="text-xl font-bold mb-4">Early Years Education</h3>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
+                  <span>Baby Day Care</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
+                  <span>Baby Class</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
+                  <span>LKG & UKG</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
+                  <span>
+                    Nurturing through play, storytelling, and basic
+                    literacy/numeracy activities
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
+                  <span>
+                    Dedicated Nursery Play Area for motor skill development and
+                    joyful learning
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
+                  <span>Parent interview</span>
+                </li>
+              </ul>
+            </div>
 
-      <div className="bg-gray-50 p-6 rounded-lg h-full">
-        <h3 className="text-xl font-bold mb-4">Primary to High School (1-10)</h3>
-        <ul className="space-y-3 text-gray-700">
-          <li className="flex items-start">
-            <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
-            <span>Completed application form</span>
-          </li>
-          <li className="flex items-start">
-            <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
-            <span>State syllabus with a focus on academic foundation and co-curricular development</span>
-          </li>
-          <li className="flex items-start">
-            <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
-            <span>Spacious and well-ventilated classrooms with digital learning aids</span>
-          </li>
-          <li className="flex items-start">
-            <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
-            <span>Regular assessments, activity-based learning, and individual attention</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+            <div className="bg-gray-50 p-6 rounded-lg h-full">
+              <h3 className="text-xl font-bold mb-4">
+                Primary to High School (1-10)
+              </h3>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
+                  <span>Completed application form</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
+                  <span>
+                    State syllabus with a focus on academic foundation and
+                    co-curricular development
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
+                  <span>
+                    Spacious and well-ventilated classrooms with digital
+                    learning aids
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
+                  <span>
+                    Regular assessments, activity-based learning, and individual
+                    attention
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Fees Section */}
       <section id="fees" className="section bg-gray-50">
@@ -257,16 +310,22 @@ const AdmissionsPage: React.FC = () => {
               <div className="bg-primary-900 text-white px-6 py-4">
                 <h3 className="text-xl font-bold">2025-2026 Academic Year</h3>
               </div>
-              
+
               <div className="p-6">
                 <div className="overflow-x-auto">
                   <table className="w-full text-left">
                     <thead>
                       <tr className="border-b border-gray-200">
                         <th className="py-3 px-4 font-semibold">Grade Level</th>
-                        <th className="py-3 px-4 font-semibold">Annual Tuition</th>
-                        <th className="py-3 px-4 font-semibold">Application Fee</th>
-                        <th className="py-3 px-4 font-semibold">Enrollment Deposit</th>
+                        <th className="py-3 px-4 font-semibold">
+                          Annual Tuition
+                        </th>
+                        <th className="py-3 px-4 font-semibold">
+                          Application Fee
+                        </th>
+                        <th className="py-3 px-4 font-semibold">
+                          Enrollment Deposit
+                        </th>
                       </tr>
                     </thead>
                     <tbody>
@@ -303,15 +362,24 @@ const AdmissionsPage: React.FC = () => {
                   <ul className="space-y-2">
                     <li className="flex items-start">
                       <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
-                      <span><strong>Technology Fee:</strong> $500 per year (includes device program for grades 6-12)</span>
+                      <span>
+                        <strong>Technology Fee:</strong> $500 per year (includes
+                        device program for grades 6-12)
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
-                      <span><strong>Activity Fee:</strong> $350 per year (covers field trips, special events, and materials)</span>
+                      <span>
+                        <strong>Activity Fee:</strong> $350 per year (covers
+                        field trips, special events, and materials)
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
-                      <span><strong>New Student Fee:</strong> $750 (one-time fee for new students)</span>
+                      <span>
+                        <strong>New Student Fee:</strong> $750 (one-time fee for
+                        new students)
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -319,20 +387,30 @@ const AdmissionsPage: React.FC = () => {
                 <div className="mt-8">
                   <h4 className="font-semibold mb-3">Payment Plans</h4>
                   <p className="text-gray-700 mb-4">
-                    St. Michel's offers flexible payment options to accommodate families' financial planning:
+                    St. Michel's offers flexible payment options to accommodate
+                    families' financial planning:
                   </p>
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-start">
                       <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
-                      <span><strong>Annual Plan:</strong> Full payment due by August 1 (2% discount)</span>
+                      <span>
+                        <strong>Annual Plan:</strong> Full payment due by August
+                        1 (2% discount)
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
-                      <span><strong>Semester Plan:</strong> Two payments due August 1 and January 1</span>
+                      <span>
+                        <strong>Semester Plan:</strong> Two payments due August
+                        1 and January 1
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-2"></span>
-                      <span><strong>Monthly Plan:</strong> Ten monthly payments (August-May)</span>
+                      <span>
+                        <strong>Monthly Plan:</strong> Ten monthly payments
+                        (August-May)
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -340,7 +418,11 @@ const AdmissionsPage: React.FC = () => {
                 <div className="mt-8">
                   <h4 className="font-semibold mb-3">Financial Aid</h4>
                   <p className="text-gray-700">
-                    St. Michel's is committed to making quality education accessible. Limited financial aid is available based on demonstrated need. Please contact our admissions office for more information about our financial aid application process.
+                    St. Michel's is committed to making quality education
+                    accessible. Limited financial aid is available based on
+                    demonstrated need. Please contact our admissions office for
+                    more information about our financial aid application
+                    process.
                   </p>
                 </div>
               </div>
@@ -353,11 +435,10 @@ const AdmissionsPage: React.FC = () => {
         <div className="container">
           <div className="section-title">
             <h2>Academic Calendar</h2>
-            <p>Important dates for the school year</p>
           </div>
-          
-          <div className="text-center py-12">
-            <p className="text-gray-500">Academic calendar content will be added here.</p>
+
+          <div className="text-center">
+            <Calendar />
           </div>
         </div>
       </section>
@@ -374,7 +455,12 @@ const AdmissionsPage: React.FC = () => {
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="studentName" className="block text-sm font-medium text-gray-700 mb-1">Student's Full Name</label>
+                  <label
+                    htmlFor="studentName"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Student's Full Name
+                  </label>
                   <input
                     type="text"
                     id="studentName"
@@ -384,7 +470,12 @@ const AdmissionsPage: React.FC = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="birthdate" className="block text-sm font-medium text-gray-700 mb-1">Date of Birth</label>
+                  <label
+                    htmlFor="birthdate"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Date of Birth
+                  </label>
                   <input
                     type="date"
                     id="birthdate"
@@ -393,7 +484,12 @@ const AdmissionsPage: React.FC = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="gradeLevel" className="block text-sm font-medium text-gray-700 mb-1">Applying for Grade</label>
+                  <label
+                    htmlFor="gradeLevel"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Applying for Grade
+                  </label>
                   <select
                     id="gradeLevel"
                     name="gradeLevel"
@@ -416,7 +512,12 @@ const AdmissionsPage: React.FC = () => {
                   </select>
                 </div>
                 <div>
-                  <label htmlFor="schoolYear" className="block text-sm font-medium text-gray-700 mb-1">Academic Year</label>
+                  <label
+                    htmlFor="schoolYear"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Academic Year
+                  </label>
                   <select
                     id="schoolYear"
                     name="schoolYear"
@@ -427,7 +528,12 @@ const AdmissionsPage: React.FC = () => {
                   </select>
                 </div>
                 <div>
-                  <label htmlFor="parentName" className="block text-sm font-medium text-gray-700 mb-1">Parent/Guardian Name</label>
+                  <label
+                    htmlFor="parentName"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Parent/Guardian Name
+                  </label>
                   <input
                     type="text"
                     id="parentName"
@@ -437,7 +543,12 @@ const AdmissionsPage: React.FC = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Email Address
+                  </label>
                   <input
                     type="email"
                     id="email"
@@ -447,7 +558,12 @@ const AdmissionsPage: React.FC = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Phone Number
+                  </label>
                   <input
                     type="tel"
                     id="phone"
@@ -457,7 +573,12 @@ const AdmissionsPage: React.FC = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="currentSchool" className="block text-sm font-medium text-gray-700 mb-1">Current School</label>
+                  <label
+                    htmlFor="currentSchool"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Current School
+                  </label>
                   <input
                     type="text"
                     id="currentSchool"
@@ -467,9 +588,14 @@ const AdmissionsPage: React.FC = () => {
                   />
                 </div>
               </div>
-              
+
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Additional Information</label>
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Additional Information
+                </label>
                 <textarea
                   id="message"
                   name="message"
@@ -478,7 +604,7 @@ const AdmissionsPage: React.FC = () => {
                   placeholder="Please share any additional information that might be helpful for your application"
                 ></textarea>
               </div>
-              
+
               <div className="flex items-start">
                 <input
                   type="checkbox"
@@ -487,15 +613,14 @@ const AdmissionsPage: React.FC = () => {
                   className="mt-1 mr-2"
                 />
                 <label htmlFor="terms" className="text-sm text-gray-700">
-                  I understand that this is an initial inquiry form and that a formal application will be required to complete the admissions process.
+                  I understand that this is an initial inquiry form and that a
+                  formal application will be required to complete the admissions
+                  process.
                 </label>
               </div>
-              
+
               <div>
-                <button
-                  type="submit"
-                  className="btn-primary w-full md:w-auto"
-                >
+                <button type="submit" className="btn-primary w-full md:w-auto">
                   Submit Application
                 </button>
               </div>

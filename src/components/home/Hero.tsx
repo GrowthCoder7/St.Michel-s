@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { ChevronRight } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { ChevronRight } from "lucide-react";
 
 interface HeroSlide {
   id: number;
@@ -16,32 +16,32 @@ interface HeroSlide {
 const slides: HeroSlide[] = [
   {
     id: 1,
-    image: 'Home/Hero1.jpg',
-    title: 'Welcome to St. Michel\'s',
-    subtitle: 'Where Knowledge Meets Excellence',
+    image: "Home/Hero1.jpg",
+    title: "Welcome to St. Michel's",
+    subtitle: "Where Knowledge Meets Excellence",
     cta: {
-      text: 'Apply Now',
-      link: '/admissions#apply',
+      text: "Apply Now",
+      link: "/admissions#apply",
     },
   },
   {
     id: 2,
-    image: 'Home/Hero2.png',
-    title: 'Discover Our Programs',
-    subtitle: 'Comprehensive Education for Tomorrow\'s Leaders',
+    image: "Home/Hero2.png",
+    title: "Discover Our Programs",
+    subtitle: "Comprehensive Education for Tomorrow's Leaders",
     cta: {
-      text: 'View Academics',
-      link: '/academics',
+      text: "View Facilities",
+      link: "/facilities",
     },
   },
   {
     id: 3,
-    image: 'Home/Hero3.png',
-    title: 'Join Our Community',
-    subtitle: 'A Supportive Environment for Every Student',
+    image: "Home/Hero3.png",
+    title: "Join Our Community",
+    subtitle: "A Supportive Environment for Every Student",
     cta: {
-      text: 'Student Life',
-      link: '/student-life',
+      text: "View Academics",
+      link: "/academics",
     },
   },
 ];
@@ -63,22 +63,28 @@ const Hero: React.FC = () => {
         <div
           key={slide.id}
           className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? 'opacity-100' : 'opacity-0 pointer-events-none'
+            index === currentSlide
+              ? "opacity-100"
+              : "opacity-0 pointer-events-none"
           }`}
         >
-          <div 
+          <div
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${slide.image})` }}
           />
           <div className="absolute inset-0 bg-primary-900/40" />
-          
+
           <div className="relative h-full container flex flex-col justify-center">
             <div className="max-w-3xl text-white animate-fade-in">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white">{slide.title}</h1>
-              <p className="text-xl md:text-2xl mb-8 text-gray-100">{slide.subtitle}</p>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white">
+                {slide.title}
+              </h1>
+              <p className="text-xl md:text-2xl mb-8 text-gray-100">
+                {slide.subtitle}
+              </p>
               {slide.cta && (
-                <Link 
-                  to={slide.cta.link} 
+                <Link
+                  to={slide.cta.link}
                   className="btn-accent inline-flex items-center"
                 >
                   {slide.cta.text}
@@ -97,7 +103,9 @@ const Hero: React.FC = () => {
             key={slide.id}
             onClick={() => setCurrentSlide(index)}
             className={`w-3 h-3 rounded-full transition-all ${
-              index === currentSlide ? 'bg-accent w-8' : 'bg-white/50 hover:bg-white/80'
+              index === currentSlide
+                ? "bg-accent w-8"
+                : "bg-white/50 hover:bg-white/80"
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />

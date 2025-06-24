@@ -1,22 +1,22 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Layouts
-import MainLayout from './layouts/MainLayout';
+import MainLayout from "./layouts/MainLayout";
 
 // Pages
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import AdmissionsPage from './pages/AdmissionsPage';
-import AcademicsPage from './pages/AcademicsPage';
-import FacilitiesPage from './pages/FacilitiesPage';
-import StudentRulesPage from './pages/StudentRulesPage';
-import ExtracurricularPage from './pages/ExtracurricularPage';
-import GalleryPage from './pages/GalleryPage';
-import NewsEventsPage from './pages/NewsEventsPage';
-import ContactPage from './pages/ContactPage';
-import NotFoundPage from './pages/NotFoundPage';
-import FloatingWhatsApp from './components/common/FloatingWhatsApp';
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import AdmissionsPage from "./pages/AdmissionsPage";
+import AcademicsPage from "./pages/AcademicsPage";
+import FacilitiesPage from "./pages/FacilitiesPage";
+import StudentRulesPage from "./pages/StudentRulesPage";
+import ExtracurricularPage from "./pages/ExtracurricularPage";
+import GalleryPage from "./pages/GalleryPage";
+import NewsEventsPage from "./pages/NewsEventsPage";
+import ContactPage from "./pages/ContactPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import FloatingWhatsApp from "./components/common/FloatingWhatsApp";
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
           <Route path="admissions" element={<AdmissionsPage />} />
           <Route path="academics" element={<AcademicsPage />} />
           <Route path="facilities" element={<FacilitiesPage />} />
-          <Route path="student-life" element={<StudentRulesPage />} />
+          <Route path="rules&reg" element={<StudentRulesPage />} />
           <Route path="extracurricular" element={<ExtracurricularPage />} />
           <Route path="gallery" element={<GalleryPage />} />
           <Route path="news-events" element={<NewsEventsPage />} />
