@@ -250,7 +250,7 @@ const DepartmentsPage: React.FC = () => {
     {
       title: "Science Lab",
       description: "Hands-on learning and experimentation.",
-      image: "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      image: "https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=1600",
       features: ["Peer Tutoring", "Study Groups", "Academic Counseling"]
     },
     {
@@ -262,7 +262,7 @@ const DepartmentsPage: React.FC = () => {
     {
       title: "3D Smart Classrooms",
       description: "Interactive learning using advanced technology.",
-      image: "https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      image: "Facilities/Classroom.png",
       features: ["Research Databases", "Study Spaces", "Technology Access"]
     },
     {
@@ -289,13 +289,13 @@ const DepartmentsPage: React.FC = () => {
     {
       title: "CCTV Surveillance",
       description: "24/7 monitoring across the campus for complete security.",
-      image: "https://images.pexels.com/photos/8566571/pexels-photo-8566571.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      image: "Facilities/Security.png",
       features: ["24/7 Monitoring", "Campus-wide Coverage", "Security Personnel"]
     },
     {
       title: "School Transportation",
       description: "Safe and reliable bus services across routes.",
-      image: "https://images.pexels.com/photos/5905434/pexels-photo-5905434.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      image: "Facilities/Bus.png",
       features: ["Trained Drivers", "Regular Maintenance", "Multiple Routes"]
     },
     {

@@ -6,39 +6,39 @@ import { GalleryItem } from '../../types';
 const galleryItems: GalleryItem[] = [
   {
     id: '1',
-    image: 'https://images.pexels.com/photos/8363143/pexels-photo-8363143.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    category: 'Campus Life',
-    title: 'Student Activities',
+    image: 'Home/Gallery/hg1.png',
+    category: '',
+    title: '',
   },
   {
     id: '2',
-    image: 'https://images.pexels.com/photos/5211446/pexels-photo-5211446.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    category: 'Academics',
-    title: 'Science Laboratory',
+    image: 'Home/Gallery/hg2.png',
+    category: '',
+    title: '',
   },
   {
     id: '3',
-    image: 'https://images.pexels.com/photos/8363101/pexels-photo-8363101.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    category: 'Sports',
-    title: 'Athletics Program',
+    image: 'Home/Gallery/hg3.png',
+    category: '',
+    title: '',
   },
   {
     id: '4',
-    image: 'https://images.pexels.com/photos/5212703/pexels-photo-5212703.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    category: 'Arts',
-    title: 'Creative Expression',
+    image: 'Home/Gallery/hg4.png',
+    category: '',
+    title: '',
   },
   {
     id: '5',
-    image: 'https://images.pexels.com/photos/5905502/pexels-photo-5905502.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    category: 'Events',
-    title: 'School Celebrations',
+    image: 'Home/Gallery/hg5.png',
+    category: '',
+    title: '',
   },
   {
     id: '6',
-    image: 'https://images.pexels.com/photos/8364026/pexels-photo-8364026.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    category: 'Campus Life',
-    title: 'Library Resources',
+    image: 'Home/Gallery/hg6.png',
+    category: '',
+    title: '',
   },
 ];
 
@@ -66,7 +66,7 @@ const Gallery: React.FC = () => {
                 />
               </div>
               
-              <div className="absolute inset-0 bg-gradient-to-t from-primary-900/90 via-primary-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+              <div className="absolute inset-0 bg-gradient-to-t from-primary-900/90 via-primary-900/50 to-transparent opacity-0  transition-opacity duration-300 flex flex-col justify-end p-6">
                 <span className="text-xs font-medium text-accent uppercase tracking-wider">{item.category}</span>
                 <h3 className="text-xl font-semibold text-white mt-1">{item.title}</h3>
               </div>

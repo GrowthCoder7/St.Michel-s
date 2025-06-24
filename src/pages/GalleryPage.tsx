@@ -5,86 +5,86 @@ const galleryItems: GalleryItem[] = [
   {
     id: '1',
     image: 'Gallery/g1.png',
-    category: 'Campus Life',
-    title: 'Student Activities',
-    description: 'Students engaging in various activities around campus.'
+    category: 'Events',
+    title: 'Prize Distribution',
+    description: 'Students receiving awards for their academic and extra-curricular achievements.'
   },
   {
     id: '2',
     image: 'Gallery/g2.png',
     category: 'Academics',
-    title: 'Science Laboratory',
-    description: 'Students conducting experiments in our state-of-the-art science lab.'
+    title: 'Computer Science Laboratory',
+    description: 'Students engaged in hands-on learning in the computer science lab.'
   },
   {
     id: '3',
     image: 'Gallery/g3.png',
-    category: 'Sports',
-    title: 'Athletics Program',
-    description: 'Our student athletes competing in various sports events.'
+    category: 'Campus Life',
+    title: 'Indoor Play Area',
+    description: 'Students enjoying various activities in the indoor play area.'
   },
   {
     id: '4',
     image: 'Gallery/g4.png',
-    category: 'Arts',
-    title: 'Creative Expression',
-    description: 'Students expressing themselves through various artistic mediums.'
+    category: 'Events',
+    title: 'Teacher\'s Day Celebration',
+    description: 'Students celebrating Teacher\'s Day with various activities and performances.'
   },
   {
     id: '5',
     image: 'Gallery/g5.png',
-    category: 'Events',
-    title: 'School Celebrations',
-    description: 'Special events and celebrations throughout the school year.'
+    category: 'Arts',
+    title: 'Creative Expression',
+    description: 'Students showcasing their artistic talents through various forms of creative expression.'
   },
   {
     id: '6',
     image: 'Gallery/g6.png',
     category: 'Campus Life',
-    title: 'Library Resources',
-    description: 'Our well-stocked library provides resources for research and reading.'
+    title: 'Graduation Ceremony',
+    description: 'Celebrating the achievements of our graduating students with a memorable ceremony.'
   },
   {
     id: '7',
     image: 'Gallery/g7.png',
-    category: 'Academics',
-    title: 'Classroom Engagement',
-    description: 'Interactive learning in our engaging classroom environments.'
+    category: 'Campus Life',
+    title: 'Morning Assembly',
+    description: 'Students participating in the morning assembly, fostering a sense of community and school spirit.'
   },
   {
     id: '8',
     image: 'Gallery/g8.png',
-    category: 'Arts',
-    title: 'Music Program',
-    description: 'Students developing their musical talents in our comprehensive music program.'
-  },
-  {
-    id: '9',
-    image: 'Gallery/g9.png',
-    category: 'Campus Life',
+    category: 'Academics',
     title: 'Outdoor Learning',
     description: 'Students enjoying our beautiful campus during outdoor learning activities.'
   },
   {
+    id: '9',
+    image: 'Gallery/g9.png',
+    category: 'Events',
+    title: 'Independence Day Celebration',
+    description: 'Students celebrating Independence Day with various activities and performances.'
+  },
+  {
     id: '10',
     image: 'Gallery/g10.png',
-    category: 'Events',
-    title: 'Graduation Ceremony',
-    description: 'Celebrating our seniors during the annual graduation ceremony.'
+    category: 'Campus Life',
+    title: 'Extracurricular Activities',
+    description: 'Students participating in various extracurricular activities.'
   },
   {
     id: '11',
-    image: 'https://images.pexels.com/photos/8364888/pexels-photo-8364888.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'Gallery/Physical.png',
     category: 'Sports',
     title: 'Physical Education',
     description: 'Students participating in physical education activities.'
   },
   {
     id: '12',
-    image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'Gallery/Focus.png',
     category: 'Academics',
-    title: 'Debate Club',
-    description: 'Students developing public speaking and critical thinking skills in Debate Club.'
+    title: 'Attention Focus',
+    description: 'Students focused on their academic pursuits.'
   },
 ];
 
