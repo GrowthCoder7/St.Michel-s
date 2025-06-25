@@ -97,7 +97,7 @@ const ContactPage: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="w-[110vw] md:w-full">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-primary-900">
         <div className="absolute inset-0 bg-primary-900 opacity-90"></div>

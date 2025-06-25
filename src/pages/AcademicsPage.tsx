@@ -1,19 +1,22 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
 const AcademicsPage: React.FC = () => {
   useEffect(() => {
-    document.title = 'Academics | St. Michel\'s';
+    document.title = "Academics | St. Michel's";
   }, []);
 
   return (
-    <div>
+    <div className="w-[110vw] md:w-full">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-primary-900">
         <div className="absolute inset-0 bg-primary-900 opacity-90"></div>
         <div className="container relative text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Academics</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+            Academics
+          </h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Discover our rigorous curriculum and innovative approach to education
+            Discover our rigorous curriculum and innovative approach to
+            education
           </p>
         </div>
       </section>
@@ -26,25 +29,39 @@ const AcademicsPage: React.FC = () => {
               <h2 className="text-3xl font-bold mb-6">Academic Excellence</h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  At St. Michel's, we foster a learning environment that encourages intellectual curiosity, critical thinking, and academic excellence. Our comprehensive curriculum is designed to challenge students at every level while providing the support they need to succeed.
+                  At St. Michel's, we foster a learning environment that
+                  encourages intellectual curiosity, critical thinking, and
+                  academic excellence. Our comprehensive curriculum is designed
+                  to challenge students at every level while providing the
+                  support they need to succeed.
                 </p>
                 <p>
-                  Our academic program is built on a strong foundation in core subjects including mathematics, science, language arts, social studies, and foreign languages. We complement these with enriching experiences in the arts, physical education, and technology.
+                  Our academic program is built on a strong foundation in core
+                  subjects including mathematics, science, language arts, social
+                  studies, and foreign languages. We complement these with
+                  enriching experiences in the arts, physical education, and
+                  technology.
                 </p>
                 <p>
-                  With small class sizes and dedicated faculty, we provide personalized attention that allows each student to develop their unique talents and interests. Our teachers are not just instructors but mentors who guide students on their educational journey.
+                  With small class sizes and dedicated faculty, we provide
+                  personalized attention that allows each student to develop
+                  their unique talents and interests. Our teachers are not just
+                  instructors but mentors who guide students on their
+                  educational journey.
                 </p>
               </div>
             </div>
             <div className="relative animate-slide-up">
-              <img 
-                src="https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=1600" 
-                alt="Students in classroom" 
+              <img
+                src="https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt="Students in classroom"
                 className="rounded-lg shadow-xl"
               />
               <div className="absolute -bottom-4 -left-4 bg-accent p-3 rounded-lg shadow-lg">
                 <p className="text-lg font-bold text-primary-900">8:1</p>
-                <p className="text-sm font-medium text-primary-900">Student-Teacher Ratio</p>
+                <p className="text-sm font-medium text-primary-900">
+                  Student-Teacher Ratio
+                </p>
               </div>
             </div>
           </div>
@@ -63,14 +80,19 @@ const AcademicsPage: React.FC = () => {
             {/* Elementary School */}
             <div className="bg-white p-8 rounded-lg shadow-md">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-6">
-                <h3 className="text-2xl font-bold text-primary-900">Elementary School (K-5)</h3>
+                <h3 className="text-2xl font-bold text-primary-900">
+                  Elementary School (K-5)
+                </h3>
                 <span className="inline-block bg-primary-100 text-primary-800 px-4 py-1 rounded-full text-sm font-medium mt-2 md:mt-0">
                   Building a Strong Foundation
                 </span>
               </div>
 
               <p className="text-gray-700 mb-6">
-                Our elementary program nurtures young minds through engaging, hands-on learning experiences. We focus on developing fundamental skills while fostering a love of learning that will last a lifetime.
+                Our elementary program nurtures young minds through engaging,
+                hands-on learning experiences. We focus on developing
+                fundamental skills while fostering a love of learning that will
+                last a lifetime.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -157,14 +179,20 @@ const AcademicsPage: React.FC = () => {
             {/* Middle School */}
             <div className="bg-white p-8 rounded-lg shadow-md">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-6">
-                <h3 className="text-2xl font-bold text-primary-900">Middle School (6-8)</h3>
+                <h3 className="text-2xl font-bold text-primary-900">
+                  Middle School (6-8)
+                </h3>
                 <span className="inline-block bg-primary-100 text-primary-800 px-4 py-1 rounded-full text-sm font-medium mt-2 md:mt-0">
                   Developing Critical Thinkers
                 </span>
               </div>
 
               <p className="text-gray-700 mb-6">
-                Our middle school program bridges the elementary and high school years, providing students with increasing independence while maintaining necessary guidance. We focus on developing critical thinking skills and preparing students for more advanced coursework.
+                Our middle school program bridges the elementary and high school
+                years, providing students with increasing independence while
+                maintaining necessary guidance. We focus on developing critical
+                thinking skills and preparing students for more advanced
+                coursework.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -251,14 +279,21 @@ const AcademicsPage: React.FC = () => {
             {/* High School */}
             <div className="bg-white p-8 rounded-lg shadow-md">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-6">
-                <h3 className="text-2xl font-bold text-primary-900">High School (9-12)</h3>
+                <h3 className="text-2xl font-bold text-primary-900">
+                  High School (9-12)
+                </h3>
                 <span className="inline-block bg-primary-100 text-primary-800 px-4 py-1 rounded-full text-sm font-medium mt-2 md:mt-0">
                   Preparing for College and Beyond
                 </span>
               </div>
 
               <p className="text-gray-700 mb-6">
-                Our high school program prepares students for success in college and beyond. We offer a rigorous college preparatory curriculum with a wide range of courses, including honors and Advanced Placement options. Our comprehensive approach ensures students develop the knowledge, skills, and character needed for future success.
+                Our high school program prepares students for success in college
+                and beyond. We offer a rigorous college preparatory curriculum
+                with a wide range of courses, including honors and Advanced
+                Placement options. Our comprehensive approach ensures students
+                develop the knowledge, skills, and character needed for future
+                success.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -358,11 +393,15 @@ const AcademicsPage: React.FC = () => {
         <div className="container">
           <div className="section-title">
             <h2>Special Programs</h2>
-            <p>Enriching educational opportunities beyond the core curriculum</p>
+            <p>
+              Enriching educational opportunities beyond the core curriculum
+            </p>
           </div>
-          
+
           <div className="text-center py-12">
-            <p className="text-gray-500">Special programs content will be added here.</p>
+            <p className="text-gray-500">
+              Special programs content will be added here.
+            </p>
           </div>
         </div>
       </section>
