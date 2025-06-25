@@ -31,7 +31,7 @@
 //       description: "Various musical groups including choir, band, and orchestra for different skill levels.",
 //       image: "https://images.pexels.com/photos/164743/pexels-photo-164743.jpeg?auto=compress&cs=tinysrgb&w=1600",
 //       features: ["Concert Performances", "Music Theory", "Individual Coaching"]
-      
+
 //     },
 //     {
 //       title: "Cultural Activity Clubs",
@@ -109,7 +109,7 @@
 //               Academic Excellence Through Specialized Programs
 //             </h2>
 //             <p className="text-gray-700 text-lg leading-relaxed">
-//               ST. Michel's offers comprehensive programs designed to nurture student growth both inside and outside the classroom. 
+//               ST. Michel's offers comprehensive programs designed to nurture student growth both inside and outside the classroom.
 //               Explore our extracurricular activities and essential school services.
 //             </p>
 //           </div>
@@ -143,8 +143,8 @@
 //           {/* Activities Grid */}
 //           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 //             {currentActivities.map((activity, index) => (
-//               <div 
-//                 key={index} 
+//               <div
+//                 key={index}
 //                 className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
 //               >
 //                 <div className="relative overflow-hidden">
@@ -183,7 +183,7 @@
 //                 Ready to Get Involved?
 //               </h3>
 //               <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-//                 Join our vibrant community and discover opportunities to grow, learn, and make lasting connections. 
+//                 Join our vibrant community and discover opportunities to grow, learn, and make lasting connections.
 //                 Contact our team to learn more about enrollment and participation.
 //               </p>
 //               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -204,10 +204,12 @@
 
 // export default DepartmentsPage;
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const DepartmentsPage: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'extracurricular' | 'school' | 'safety'>('extracurricular');
+  const [activeTab, setActiveTab] = useState<
+    "extracurricular" | "school" | "safety"
+  >("extracurricular");
 
   useEffect(() => {
     document.title = "Departments | ST. MICHEL'S ENGLISH SCHOOL";
@@ -218,71 +220,92 @@ const DepartmentsPage: React.FC = () => {
       title: "Karate & Dance Classes",
       description: " For physical fitness and creative expression.",
       image: "Facilities/Karate.png",
-      features: ["Self-Defense Skills", "Discipline", "Confidence Building"]
+      features: ["Self-Defense Skills", "Discipline", "Confidence Building"],
     },
     {
       title: "Bandset Classes",
       description: " Enhancing rhythm, discipline, and team spirit.",
-      image: "https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      features: ["Instrument Proficiency", "Music Theory", "Performance Skills"]
+      image:
+        "https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      features: [
+        "Instrument Proficiency",
+        "Music Theory",
+        "Performance Skills",
+      ],
     },
     {
       title: "Scouts and Guides",
       description: "Instilling responsibility, leadership, and service values.",
       image: "Facilities/Scouts.png",
-      features: ["Outdoor Skills", "Community Service", "Leadership Training"]
+      features: ["Outdoor Skills", "Community Service", "Leadership Training"],
     },
     {
       title: "Cultural Activity Clubs",
       description: "Promoting talent in music, drama, drawing, and more.",
       image: "Facilities/Cultural.png",
-      features: ["Leadership Development", "Event Planning", "Community Service"]
+      features: [
+        "Leadership Development",
+        "Event Planning",
+        "Community Service",
+      ],
     },
     {
       title: "Huge Play Area ",
       description: "For physical development and recreational activities.",
       image: "Facilities/PlayArea.png",
-      features: ["Sports Activities", "Team Building", "Physical Fitness"]
-    }
+      features: ["Sports Activities", "Team Building", "Physical Fitness"],
+    },
   ];
 
   const schoolActivities = [
     {
       title: "Science Lab",
       description: "Hands-on learning and experimentation.",
-      image: "https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      features: ["Peer Tutoring", "Study Groups", "Academic Counseling"]
+      image:
+        "https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      features: ["Peer Tutoring", "Study Groups", "Academic Counseling"],
     },
     {
       title: "Library",
-      description: "A rich collection of books and resources for all age groups.",
-      image: "https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      features: ["Quiet Study Areas", "Research Assistance", "Reading Programs"]
+      description:
+        "A rich collection of books and resources for all age groups.",
+      image:
+        "https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      features: [
+        "Quiet Study Areas",
+        "Research Assistance",
+        "Reading Programs",
+      ],
     },
     {
       title: "3D Smart Classrooms",
       description: "Interactive learning using advanced technology.",
       image: "Facilities/Classroom.png",
-      features: ["Research Databases", "Study Spaces", "Technology Access"]
+      features: ["Research Databases", "Study Spaces", "Technology Access"],
     },
     {
       title: "Auditorium",
       description: "For school events, seminars, and celebration.",
-      image: "https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      features: ["Event Hosting", "Performance Space", "Community Engagement"]
+      image:
+        "https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      features: ["Event Hosting", "Performance Space", "Community Engagement"],
     },
     {
       title: "Digital Learning App",
       description: " Supporting home learning and academic revision.",
       image: "Facilities/Digital.jpg",
-      features: ["Digital Classrooms", "Coding Programs", "Tech Support"]
+      features: ["Digital Classrooms", "Coding Programs", "Tech Support"],
     },
     {
       title: "Student Communication App",
       description: "Updates, notices, homework, and attendance.",
       image: "Facilities/Student_Comm.jpg",
-      features: ["IEP Support", "Learning Accommodations", "Specialized Instruction"]
-    }
+      features: [
+        "IEP Support",
+        "Learning Accommodations",
+        "Specialized Instruction",
+      ],
+    },
   ];
 
   const safetyActivities = [
@@ -290,35 +313,40 @@ const DepartmentsPage: React.FC = () => {
       title: "CCTV Surveillance",
       description: "24/7 monitoring across the campus for complete security.",
       image: "Facilities/Security.png",
-      features: ["24/7 Monitoring", "Campus-wide Coverage", "Security Personnel"]
+      features: [
+        "24/7 Monitoring",
+        "Campus-wide Coverage",
+        "Security Personnel",
+      ],
     },
     {
       title: "School Transportation",
       description: "Safe and reliable bus services across routes.",
       image: "Facilities/Bus.png",
-      features: ["Trained Drivers", "Regular Maintenance", "Multiple Routes"]
+      features: ["Trained Drivers", "Regular Maintenance", "Multiple Routes"],
     },
     {
       title: "School Bus Tracking System",
       description: "Real-time location updates for parents.",
       image: "Facilities/BusTracking.png",
-      features: ["GPS Tracking", "Parent Notifications", "Real-time Updates"]
+      features: ["GPS Tracking", "Parent Notifications", "Real-time Updates"],
     },
     {
       title: "Dedicated Staff",
-      description: "40+ Teaching Staff and 30+ Non-Teaching Staff ensuring quality education and care.",
+      description:
+        "40+ Teaching Staff and 30+ Non-Teaching Staff ensuring quality education and care.",
       image: "Facilities/Staff.jpg",
-      features: ["Trained Personnel", "Experienced Teachers", "Caring Staff"]
-    }
+      features: ["Trained Personnel", "Experienced Teachers", "Caring Staff"],
+    },
   ];
 
   const getCurrentActivities = () => {
     switch (activeTab) {
-      case 'extracurricular':
+      case "extracurricular":
         return extracurricularActivities;
-      case 'school':
+      case "school":
         return schoolActivities;
-      case 'safety':
+      case "safety":
         return safetyActivities;
       default:
         return extracurricularActivities;
@@ -328,14 +356,17 @@ const DepartmentsPage: React.FC = () => {
   const currentActivities = getCurrentActivities();
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div id="facilities" className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-primary-900">
         <div className="absolute inset-0 bg-primary-900 opacity-90"></div>
         <div className="container relative text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Facilities</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+            Facilities
+          </h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Discover our rigorous curriculum and innovative approach to education
+            Discover our rigorous curriculum and innovative approach to
+            education
           </p>
         </div>
       </section>
@@ -348,8 +379,9 @@ const DepartmentsPage: React.FC = () => {
               Academic Excellence Through Specialized Programs
             </h2>
             <p className="text-gray-700 text-lg leading-relaxed">
-              ST. Michel's offers comprehensive programs designed to nurture student growth both inside and outside the classroom. 
-              Explore our extracurricular activities and essential school services.
+              ST. Michel's offers comprehensive programs designed to nurture
+              student growth both inside and outside the classroom. Explore our
+              extracurricular activities and essential school services.
             </p>
           </div>
 
@@ -357,31 +389,31 @@ const DepartmentsPage: React.FC = () => {
           <div className="flex justify-center mb-12">
             <div className="bg-gray-100 p-1 rounded-lg inline-flex">
               <button
-                onClick={() => setActiveTab('extracurricular')}
+                onClick={() => setActiveTab("extracurricular")}
                 className={`px-6 py-3 rounded-md font-medium transition-all duration-300 ${
-                  activeTab === 'extracurricular'
-                    ? 'bg-blue-600 text-white shadow-md'
-                    : 'text-gray-600 hover:text-gray-900'
+                  activeTab === "extracurricular"
+                    ? "bg-blue-600 text-white shadow-md"
+                    : "text-gray-600 hover:text-gray-900"
                 }`}
               >
                 Extracurricular Activities
               </button>
               <button
-                onClick={() => setActiveTab('school')}
+                onClick={() => setActiveTab("school")}
                 className={`px-6 py-3 rounded-md font-medium transition-all duration-300 ${
-                  activeTab === 'school'
-                    ? 'bg-blue-600 text-white shadow-md'
-                    : 'text-gray-600 hover:text-gray-900'
+                  activeTab === "school"
+                    ? "bg-blue-600 text-white shadow-md"
+                    : "text-gray-600 hover:text-gray-900"
                 }`}
               >
                 School Activities
               </button>
               <button
-                onClick={() => setActiveTab('safety')}
+                onClick={() => setActiveTab("safety")}
                 className={`px-6 py-3 rounded-md font-medium transition-all duration-300 ${
-                  activeTab === 'safety'
-                    ? 'bg-blue-600 text-white shadow-md'
-                    : 'text-gray-600 hover:text-gray-900'
+                  activeTab === "safety"
+                    ? "bg-blue-600 text-white shadow-md"
+                    : "text-gray-600 hover:text-gray-900"
                 }`}
               >
                 Safety & Security
@@ -392,8 +424,8 @@ const DepartmentsPage: React.FC = () => {
           {/* Activities Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {currentActivities.map((activity, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
               >
                 <div className="relative overflow-hidden">
@@ -412,9 +444,14 @@ const DepartmentsPage: React.FC = () => {
                     {activity.description}
                   </p>
                   <div className="space-y-2">
-                    <h4 className="text-sm font-semibold text-gray-800 mb-2">Key Features:</h4>
+                    <h4 className="text-sm font-semibold text-gray-800 mb-2">
+                      Key Features:
+                    </h4>
                     {activity.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center text-sm text-gray-600">
+                      <div
+                        key={featureIndex}
+                        className="flex items-center text-sm text-gray-600"
+                      >
                         <div className="w-2 h-2 bg-blue-500 rounded-full mr-3 flex-shrink-0" />
                         {feature}
                       </div>
@@ -432,8 +469,9 @@ const DepartmentsPage: React.FC = () => {
                 Ready to Get Involved?
               </h3>
               <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-                Join our vibrant community and discover opportunities to grow, learn, and make lasting connections. 
-                Contact our team to learn more about enrollment and participation.
+                Join our vibrant community and discover opportunities to grow,
+                learn, and make lasting connections. Contact our team to learn
+                more about enrollment and participation.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-300 shadow-md hover:shadow-lg">
