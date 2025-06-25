@@ -2,6 +2,72 @@ import React, { useEffect } from "react";
 import FAQAccordion from "../components/FAQAccordian";
 import Calendar from "../components/Calendar";
 
+const timelineItems = [
+  {
+    title: "1. Inquiry",
+    description:
+      "Begin your journey by submitting an inquiry form or contacting our admissions office. We'll provide information about our programs and answer your initial questions.",
+    items: [
+      "Basic contact information",
+      "Student's grade level of interest",
+      "Preferred start date",
+    ],
+    side: "left",
+    label: "What You Need:",
+  },
+  {
+    title: "2. Application",
+    description:
+      "Submit a formal application along with the required documents. Our admissions team will review your application to ensure it's complete.",
+    items: [
+      "Completed application form",
+      "Application fee",
+      "Student's academic records",
+      "Teacher recommendations",
+    ],
+    side: "right",
+    label: "What You Need:",
+  },
+  {
+    title: "3. Assessment",
+    description:
+      "Students will complete grade-appropriate assessments to help us understand their academic strengths and areas for growth. This ensures proper placement in our programs.",
+    items: [
+      "Grade-level assessment in core subjects",
+      "Approximately 1-2 hours depending on grade",
+      "No special preparation required",
+    ],
+    side: "left",
+    label: "What to Expect:",
+  },
+  {
+    title: "4. Campus Visit",
+    description:
+      "Schedule a visit to tour our campus, meet with faculty, and experience our learning environment. This is also an opportunity for an in-person interview.",
+    items: [
+      "Tour of campus facilities",
+      "Meeting with administrators and faculty",
+      "Student interview (for older students)",
+      "Parent interview",
+    ],
+    side: "right",
+    label: "What to Expect:",
+  },
+  {
+    title: "5. Decision & Enrollment",
+    description:
+      "After reviewing all components of your application, we will notify you of our admission decision. Upon acceptance, you'll receive enrollment information to secure your place.",
+    items: [
+      "Complete enrollment contract",
+      "Pay enrollment deposit",
+      "Submit health forms and final records",
+      "Attend new student orientation",
+    ],
+    side: "left",
+    label: "Next Steps:",
+  },
+];
+
 const AdmissionsPage: React.FC = () => {
   useEffect(() => {
     document.title = "Admissions | St. Michel's";
@@ -60,156 +126,59 @@ const AdmissionsPage: React.FC = () => {
           <div className="max-w-4xl mx-auto">
             <div className="relative">
               {/* Timeline Line */}
-              <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-primary-200"></div>
+              <div className="hidden md:block absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-primary-200"></div>
 
-              {/* Step 1 */}
-              <div className="relative mb-12">
-                <div className="md:flex items-center">
-                  <div className="md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right">
-                    <h3 className="text-2xl font-bold text-primary-900 mb-3">
-                      1. Inquiry
-                    </h3>
-                    <p className="text-gray-700">
-                      Begin your journey by submitting an inquiry form or
-                      contacting our admissions office. We'll provide
-                      information about our programs and answer your initial
-                      questions.
-                    </p>
-                  </div>
-                  <div className="absolute left-0 md:left-1/2 transform -translate-y-1/2 md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent border-4 border-white flex items-center justify-center text-white font-bold">
-                    1
-                  </div>
-                  <div className="md:w-1/2 md:pl-12">
-                    <div className="bg-white p-6 rounded-lg shadow-md">
-                      <h4 className="font-semibold mb-2">What You Need:</h4>
-                      <ul className="list-disc list-inside text-gray-600 space-y-1">
-                        <li>Basic contact information</li>
-                        <li>Student's grade level of interest</li>
-                        <li>Preferred start date</li>
-                      </ul>
+              <div className="space-y-20 relative">
+                {timelineItems.map((step, index) => (
+                  <div key={index} className="relative">
+                    {/* Step Indicator */}
+                    <div className="hidden md:flex absolute top-0 left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-accent border-4 border-white items-center justify-center text-white font-bold z-10">
+                      {index + 1}
+                    </div>
+
+                    {/* Line connecting steps */}
+                    {index !== 0 && (
+                      <div className="hidden md:block absolute top-0 left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-200 z-0" />
+                    )}
+
+                    <div className="md:flex md:items-center mt-12 md:mt-0">
+                      {/* Text Section */}
+                      <div
+                        className={`md:w-1/2 px-4 ${
+                          step.side === "left"
+                            ? "md:pr-12 md:text-right"
+                            : "md:pl-12 md:order-2"
+                        }`}
+                      >
+                        <h3 className="text-2xl font-bold text-primary-900 mb-3">
+                          {step.title}
+                        </h3>
+                        <p className="text-gray-700">{step.description}</p>
+                      </div>
+
+                      {/* Spacer for mobile step indicator */}
+                      <div className="h-14 md:hidden" />
+
+                      {/* Card Section */}
+                      <div
+                        className={`md:w-1/2 px-4 mt-6 md:mt-0 ${
+                          step.side === "left"
+                            ? "md:pl-12"
+                            : "md:pr-12 md:order-1"
+                        }`}
+                      >
+                        <div className="bg-white p-6 rounded-lg shadow-md">
+                          <h4 className="font-semibold mb-2">{step.label}</h4>
+                          <ul className="list-disc list-inside text-gray-600 space-y-1">
+                            {step.items.map((item, i) => (
+                              <li key={i}>{item}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-
-              {/* Step 2 */}
-              <div className="relative mb-12">
-                <div className="md:flex items-center">
-                  <div className="md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right order-1 md:order-2">
-                    <div className="bg-white p-6 rounded-lg shadow-md">
-                      <h4 className="font-semibold mb-2">What You Need:</h4>
-                      <ul className="list-disc list-inside text-gray-600 space-y-1">
-                        <li>Completed application form</li>
-                        <li>Application fee</li>
-                        <li>Student's academic records</li>
-                        <li>Teacher recommendations</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="absolute left-0 md:left-1/2 transform -translate-y-1/2 md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent border-4 border-white flex items-center justify-center text-white font-bold">
-                    2
-                  </div>
-                  <div className="md:w-1/2 md:pl-12 order-2 md:order-1">
-                    <h3 className="text-2xl font-bold text-primary-900 mb-3">
-                      2. Application
-                    </h3>
-                    <p className="text-gray-700">
-                      Submit a formal application along with the required
-                      documents. Our admissions team will review your
-                      application to ensure it's complete.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Step 3 */}
-              <div className="relative mb-12">
-                <div className="md:flex items-center">
-                  <div className="md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right">
-                    <h3 className="text-2xl font-bold text-primary-900 mb-3">
-                      3. Assessment
-                    </h3>
-                    <p className="text-gray-700">
-                      Students will complete grade-appropriate assessments to
-                      help us understand their academic strengths and areas for
-                      growth. This ensures proper placement in our programs.
-                    </p>
-                  </div>
-                  <div className="absolute left-0 md:left-1/2 transform -translate-y-1/2 md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent border-4 border-white flex items-center justify-center text-white font-bold">
-                    3
-                  </div>
-                  <div className="md:w-1/2 md:pl-12">
-                    <div className="bg-white p-6 rounded-lg shadow-md">
-                      <h4 className="font-semibold mb-2">What to Expect:</h4>
-                      <ul className="list-disc list-inside text-gray-600 space-y-1">
-                        <li>Grade-level assessment in core subjects</li>
-                        <li>Approximately 1-2 hours depending on grade</li>
-                        <li>No special preparation required</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Step 4 */}
-              <div className="relative mb-12">
-                <div className="md:flex items-center">
-                  <div className="md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right order-1 md:order-2">
-                    <div className="bg-white p-6 rounded-lg shadow-md">
-                      <h4 className="font-semibold mb-2">What to Expect:</h4>
-                      <ul className="list-disc list-inside text-gray-600 space-y-1">
-                        <li>Tour of campus facilities</li>
-                        <li>Meeting with administrators and faculty</li>
-                        <li>Student interview (for older students)</li>
-                        <li>Parent interview</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="absolute left-0 md:left-1/2 transform -translate-y-1/2 md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent border-4 border-white flex items-center justify-center text-white font-bold">
-                    4
-                  </div>
-                  <div className="md:w-1/2 md:pl-12 order-2 md:order-1">
-                    <h3 className="text-2xl font-bold text-primary-900 mb-3">
-                      4. Campus Visit
-                    </h3>
-                    <p className="text-gray-700">
-                      Schedule a visit to tour our campus, meet with faculty,
-                      and experience our learning environment. This is also an
-                      opportunity for an in-person interview.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Step 5 */}
-              <div className="relative">
-                <div className="md:flex items-center">
-                  <div className="md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right">
-                    <h3 className="text-2xl font-bold text-primary-900 mb-3">
-                      5. Decision & Enrollment
-                    </h3>
-                    <p className="text-gray-700">
-                      After reviewing all components of your application, we
-                      will notify you of our admission decision. Upon
-                      acceptance, you'll receive enrollment information to
-                      secure your place.
-                    </p>
-                  </div>
-                  <div className="absolute left-0 md:left-1/2 transform -translate-y-1/2 md:-translate-x-1/2 w-10 h-10 rounded-full bg-accent border-4 border-white flex items-center justify-center text-white font-bold">
-                    5
-                  </div>
-                  <div className="md:w-1/2 md:pl-12">
-                    <div className="bg-white p-6 rounded-lg shadow-md">
-                      <h4 className="font-semibold mb-2">Next Steps:</h4>
-                      <ul className="list-disc list-inside text-gray-600 space-y-1">
-                        <li>Complete enrollment contract</li>
-                        <li>Pay enrollment deposit</li>
-                        <li>Submit health forms and final records</li>
-                        <li>Attend new student orientation</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
