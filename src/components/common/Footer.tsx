@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (
-    <footer className="bg-primary-900 text-white pt-16 pb-6">
+    <footer className="w-[110vw] md:w-full bg-primary-900 text-white pt-16 pb-6">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>

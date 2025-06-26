@@ -356,7 +356,10 @@ const DepartmentsPage: React.FC = () => {
   const currentActivities = getCurrentActivities();
 
   return (
-    <div id="facilities" className="min-h-screen bg-gray-50">
+    <div
+      id="facilities"
+      className="w-[110vw] md:w-full min-h-screen bg-gray-50"
+    >
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-primary-900">
         <div className="absolute inset-0 bg-primary-900 opacity-90"></div>

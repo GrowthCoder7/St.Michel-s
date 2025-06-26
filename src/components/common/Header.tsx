@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown, GraduationCap, Image } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { NavItem } from "../../types";
 
 interface HeaderProps {
@@ -101,18 +101,14 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
           <div>
             <h1
               className={`text-base font-bold ${
-                isScrolled
-                  ? "text-primary-900"
-                  : "md:text-white text-primary-900"
+                isScrolled ? "text-primary-900" : "text-white"
               }`}
             >
               ST. MICHEL’S ENGLISH SCHOOL
             </h1>
             <p
-              className={`text-xs ${
-                isScrolled
-                  ? "text-primary-700"
-                  : "md:text-gray-200 text-primary-700"
+              className={`font-semibold text-xs ${
+                isScrolled ? "text-primary-700" : "text-gray-200"
               }`}
             >
               Building Bright Futures since 1981
@@ -181,7 +177,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
         {/* Mobile Menu Button */}
         <button
           className={`lg:hidden ${
-            isScrolled ? "text-gray-800" : "text-primary-900 md:text-white"
+            isScrolled ? "text-gray-800" : "text-white"
           } hover:text-accent focus:outline-none`}
           onClick={toggleMobileMenu}
           aria-label="Toggle mobile menu"
