@@ -14,7 +14,7 @@ const HomePage: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-[110vw] md:w-full">
+    <div className="w-[110vw] md:w-full overflow-x-hidden">
       <Hero />
       <Welcome />
       <Programs />
