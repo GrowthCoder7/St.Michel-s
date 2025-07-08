@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Calendar, ArrowLeft, ArrowRight, ChevronDown } from "lucide-react";
 import { NewsItem, Event } from "../types";
-import prize from "/news/prize.jpg";
+import prize from "/Gallery/AcadAchiev.jpg";
 import republic from "/news/republic.jpg";
 import independence from "/news/independence.jpg";
 import sports from "/news/sportsday.jpg";
@@ -12,7 +12,7 @@ const newsItems: NewsItem[] = [
   {
     id: "1",
     title: "St. Michel's Wins Best School Award in Academic Achievement",
-    date: "",
+    date: "November 27, 2024",
     excerpt: `We are incredibly proud to announce that St. Michel's English School has been awarded the "Best School Award in Academic Achievement" at the State FAP Awards 2024! This esteemed recognition, presented on November 27, 2024, is a testament to the hard work, dedication, and excellence of our students, teachers, and the entire school community. We extend our heartfelt gratitude to FAP for this honour.`,
     category: "Achievement",
     image: prize,
