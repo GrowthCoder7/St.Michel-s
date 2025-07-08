@@ -5,6 +5,7 @@ import neha from "/Home/testimonials/neha.jpg";
 import jeevan from "/Home/testimonials/JEEVAN H.jpeg";
 import preetham from "/Home/testimonials/PREETHAM M.jpeg";
 import mithun from "/Home/testimonials/mitun.jpg";
+import gowda from "/about/gowda.jpg";
 
 const testimonials: Testimonial[] = [
   {
@@ -32,12 +33,20 @@ const testimonials: Testimonial[] = [
     avatar: mithun,
   },
   {
-    id: "3",
+    id: "4",
     name: "Neha R Gowda",
     role: "Alumni",
     content:
       "The individual attention and care by the faculty in SMES to each student is highly Commendable I attended this school nearly a decade ago and have only great things to say about my experience. The teachers are amazing, the curriculum is second to none and each child is treated with care.",
     avatar: neha,
+  },
+  {
+    id: "5",
+    name: "Vishruth Gowda R",
+    role: "Parent",
+    content:
+      "Your commitment to our child's development is invaluable.  We are very happy that our child feels safe and supported at this school.",
+    avatar: gowda,
   },
 ];
 

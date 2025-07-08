@@ -105,28 +105,28 @@ const deptStaff = [
     imgPath: gundama,
     dept: "Book Section",
     qualification: "P.U.C, D.Ed",
-    exp: "33 years experience in Hindi",
+    exp: "36 years experience in Hindi",
   },
   {
     name: "Gulnaz.G",
     imgPath: gulnaz,
     dept: "Uniform Section",
     qualification: "M.A, B.Ed",
-    exp: "18 years experience in English",
+    exp: "21 years experience in English",
   },
   {
     name: "Lakshmi.K",
     imgPath: lakshmi,
     dept: "Admission Section",
     qualification: "B.A, D.Ed",
-    exp: "13 years experience in Social Science",
+    exp: "16 years experience in Social Science",
   },
   {
     name: "Madhu kumar B.V",
     imgPath: madhu,
     dept: "Technical Section",
     qualification: "B.A, B.Ed",
-    exp: "10 years experience in Maths & English",
+    exp: "13 years experience in Maths & English",
   },
 ];
 

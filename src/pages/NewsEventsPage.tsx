@@ -1,95 +1,115 @@
 import React, { useState, useEffect } from "react";
 import { Calendar, ArrowLeft, ArrowRight, ChevronDown } from "lucide-react";
 import { NewsItem, Event } from "../types";
+import prize from "/news/prize.jpg";
+import republic from "/news/republic.jpg";
+import independence from "/news/independence.jpg";
+import sports from "/news/sportsday.jpg";
+import pta from "/news/pta.jpg";
+import clean from "/news/cleandrive.jpg";
 
 const newsItems: NewsItem[] = [
   {
     id: "1",
-    title: "St. Michel's Wins National Science Competition",
-    date: "May 15, 2025",
-    excerpt:
-      "Our students brought home the first place trophy in the National Science Olympiad, showcasing exceptional talent and dedication.",
+    title: "St. Michel's Wins Best School Award in Academic Achievement",
+    date: "",
+    excerpt: `We are incredibly proud to announce that St. Michel's English School has been awarded the "Best School Award in Academic Achievement" at the State FAP Awards 2024! This esteemed recognition, presented on November 27, 2024, is a testament to the hard work, dedication, and excellence of our students, teachers, and the entire school community. We extend our heartfelt gratitude to FAP for this honour.`,
     category: "Achievement",
-    image:
-      "https://images.pexels.com/photos/8197559/pexels-photo-8197559.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: prize,
   },
   {
     id: "2",
-    title: "New Arts Center Opening This Fall",
-    date: "April 30, 2025",
-    excerpt:
-      "We're excited to announce the opening of our state-of-the-art performing arts center, enhancing our vibrant arts program.",
-    category: "Facilities",
-    image:
-      "https://images.pexels.com/photos/6147076/pexels-photo-6147076.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    title: "Republic Day Celebration",
+    date: "January 26, 2025",
+    excerpt: `At St. Michel's English School, Republic Day is celebrated each year with great pride and enthusiasm on the school premises. The day begins with the flag hoisting ceremony, followed by the National Anthem and an address highlighting the importance of the Indian Constitution and our duties as citizens.
+
+The celebration features vibrant cultural programs including patriotic songs, skits, and dance performances by students that reflect the spirit of unity and diversity. A special procession to the Town Field is organized, where our students actively participate and present a patriotic group dance in front of the community.
+
+As part of the tradition, a wholesome breakfast is served to all students and staff. The program concludes with sweet distribution, symbolizing harmony and sharing.
+
+The Republic Day celebration at our school instills national pride, encourages student participation, and reinforces the values of democracy, equality, and unity among young minds.`,
+    category: "Events",
+    image: republic,
   },
   {
     id: "3",
-    title: "Annual Sports Day Scheduled for June",
-    date: "April 22, 2025",
-    excerpt:
-      "Mark your calendars for our Annual Sports Day, featuring exciting competitions and activities for all grade levels.",
-    category: "Events",
-    image:
-      "https://images.pexels.com/photos/8363104/pexels-photo-8363104.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    title: "Annual Sports Day Celebration",
+    date: "",
+    excerpt: `At St. Michel’s English School, the Annual Sports Day is one of the most awaited and vibrant events of the academic year. It is celebrated with great energy and excitement, aiming to promote physical fitness, teamwork, and sportsmanship among students.
+
+The event begins with the march-past by all houses, followed by the hoisting of the school flag and an inspiring opening address by the Chief Guest. The students participate enthusiastically in various track and field events, including sprints, relays, long jump, and more.
+
+Fun games and team events are also organized for pre-primary students and staff, making the celebration inclusive and joyful. The entire playground comes alive with cheers, colorful house flags, and coordinated drills showcasing discipline and coordination.
+
+Winners are awarded medals and certificates to encourage their dedication and sporting spirit. The day concludes with the National Anthem and a message of motivation and pride from the school management.
+
+The Annual Sports Day not only fosters a spirit of healthy competition but also helps in building character, resilience, and leadership among students.
+`,
+    category: "Campus Life",
+    image: sports,
   },
   {
     id: "4",
-    title: "Brighton Students Excel in Mathematics Competition",
-    date: "April 15, 2025",
-    excerpt:
-      "Our mathematics team secured top positions in the Regional Mathematics Competition, demonstrating exceptional problem-solving skills.",
-    category: "Achievement",
-    image:
-      "https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    title: "Independence Day Celebration",
+    date: "August 15, 2024",
+    excerpt: `The Independence Day celebration at St. Michel's English School was a proud and colorful event, filled with patriotism and unity. Held on the school campus, the event brought together students, staff, and management to honor the nation's freedom.
+
+As seen in the photograph, the day began with the hoisting of the national flag, followed by the National Anthem and inspiring speeches about India’s journey toward independence. Students dressed in vibrant ethnic and patriotic attire, proudly waving the Tricolor, showcased their love for the country.
+
+The celebration featured cultural performances, including dances, patriotic songs, and role plays representing national leaders and freedom fighters. The students' spirited presentation reflected the values of unity, sacrifice, and pride in our nation.
+
+The management also recognized student participants with appreciation certificates. A refreshing breakfast and sweet distribution added warmth to the celebration, ensuring everyone felt included and honored.
+
+This memorable day reminded every student of their responsibility as young citizens and inspired them to contribute positively to the future of our nation.
+`,
+    category: "Events",
+    image: independence,
   },
   {
     id: "5",
-    title: "Parent-Teacher Conference Week Approaching",
-    date: "April 10, 2025",
-    excerpt:
-      "Join us for our spring Parent-Teacher Conferences to discuss your child's progress and plans for the upcoming academic year.",
-    category: "Announcements",
-    image:
-      "https://images.pexels.com/photos/5212340/pexels-photo-5212340.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    title: "Unique Child - Parent Awareness Program",
+    date: "",
+    excerpt: `At St. Michel's English School, we believe that every child is unique, and parental involvement plays a vital role in their holistic development. To strengthen this bond and enhance understanding, the school organized a “Unique Child” Parent Program, conducted by our school secretary, Mr. Bhaskar S.
+
+The session witnessed enthusiastic participation from parents across all grades, as seen in the image. The program focused on:
+
+Understanding the individual needs and learning styles of children
+
+Encouraging positive parenting techniques
+
+The importance of home-school partnership
+
+Supporting children emotionally and academically in their growth journey
+
+Mr. Bhaskar S. addressed the gathering with insightful guidance and practical tips, helping parents reflect on their roles in nurturing a balanced and confident child.
+
+The interactive session created a strong sense of connection between the school and parents, reinforcing our shared commitment to every child's success.
+`,
+    category: "Events",
+    image: pta,
   },
   {
     id: "6",
-    title: "Summer Programs Registration Now Open",
-    date: "April 5, 2025",
-    excerpt:
-      "Explore our diverse summer enrichment programs designed to engage students in academic, athletic, and creative pursuits during the break.",
-    category: "Announcements",
-    image:
-      "https://images.pexels.com/photos/8364153/pexels-photo-8364153.jpeg?auto=compress&cs=tinysrgb&w=1600",
-  },
-  {
-    id: "7",
-    title: "St. Michel's Hosts International Exchange Students",
-    date: "March 28, 2025",
-    excerpt:
-      "We welcomed exchange students from three countries this month, enriching our school community with diverse perspectives and cultures.",
+    title: "Environment Awareness Program - Clean Campus Drive",
+    date: "",
+    excerpt: `At St. Michel's English School, we believe in nurturing not just young minds, but also responsible citizens. As part of our Environment Awareness Program, students took part in a campus and surroundings clean-up drive to promote cleanliness and environmental care.
+
+Wearing gloves and working in teams, our students enthusiastically cleaned dry leaves, litter, and waste from school premises and nearby areas. The activity instilled the importance of hygiene, sustainability, and teamwork.
+
+“Clean surroundings reflect a clean mind. Let's begin with our school, our second home.”
+
+This hands-on effort aimed to inspire students to value their environment and carry forward the habit of cleanliness into their homes and communities. The school regularly encourages such eco-conscious practices to help students grow into environmentally aware individuals.
+`,
     category: "Campus Life",
-    image:
-      "https://images.pexels.com/photos/5905510/pexels-photo-5905510.jpeg?auto=compress&cs=tinysrgb&w=1600",
-  },
-  {
-    id: "8",
-    title: "Theater Department Announces Spring Production",
-    date: "March 20, 2025",
-    excerpt:
-      'Our talented drama students will present "A Midsummer Night\'s Dream" this May. Tickets will be available starting next month.',
-    category: "Arts",
-    image:
-      "https://images.pexels.com/photos/6122033/pexels-photo-6122033.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: clean,
   },
 ];
 
 const upcomingEvents: Event[] = [
   {
     id: "1",
-    title: "Parent-Teacher Conferences",
-    date: "May 2-3, 2025",
+    title: "School Level Prathiba Karanji",
+    date: "July 28, 2025",
     time: "3:00 PM - 7:00 PM",
     location: "All Classrooms",
     description:
@@ -97,8 +117,8 @@ const upcomingEvents: Event[] = [
   },
   {
     id: "2",
-    title: "Spring Concert",
-    date: "May 12, 2025",
+    title: "78th Independence Day",
+    date: "August 15, 2025",
     time: "7:00 PM",
     location: "Auditorium",
     description:
@@ -106,8 +126,8 @@ const upcomingEvents: Event[] = [
   },
   {
     id: "3",
-    title: "Science Fair",
-    date: "May 18, 2025",
+    title: "Educational Trip for all the classes",
+    date: "November, 2025",
     time: "9:00 AM - 2:00 PM",
     location: "Gymnasium",
     description:
@@ -115,8 +135,8 @@ const upcomingEvents: Event[] = [
   },
   {
     id: "4",
-    title: "Annual Sports Day",
-    date: "June 5, 2025",
+    title: "Parents Sports",
+    date: "November, 2025",
     time: "10:00 AM - 3:00 PM",
     location: "Sports Fields",
     description:
@@ -124,8 +144,17 @@ const upcomingEvents: Event[] = [
   },
   {
     id: "5",
-    title: "Graduation Ceremony",
-    date: "June 15, 2025",
+    title: "Annual Sports Day Celebration",
+    date: "December, 2025",
+    time: "5:00 PM",
+    location: "Main Quad",
+    description:
+      "Celebrating our graduating seniors as they prepare for their next chapter.",
+  },
+  {
+    id: "6",
+    title: "45th Scoool Fest",
+    date: "January, 2026",
     time: "5:00 PM",
     location: "Main Quad",
     description:
@@ -138,7 +167,6 @@ const NewsEventsPage: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>("All");
   const [currentPage, setCurrentPage] = useState(1);
   const [filteredNews, setFilteredNews] = useState<NewsItem[]>([]);
-  const [expandedEvent, setExpandedEvent] = useState<string | null>(null);
   const itemsPerPage = 6;
 
   const categories = [
@@ -166,8 +194,10 @@ const NewsEventsPage: React.FC = () => {
     setCurrentPage(1);
   }, [activeCategory]);
 
-  const toggleEvent = (eventId: string) => {
-    setExpandedEvent(expandedEvent === eventId ? null : eventId);
+  const [expandedNews, setExpandedNews] = useState<string | null>(null);
+
+  const toggleNews = (id: string) => {
+    setExpandedNews(expandedNews === id ? null : id);
   };
 
   // Calculate pagination
@@ -251,7 +281,8 @@ const NewsEventsPage: React.FC = () => {
                     <div
                       key={item.id}
                       id={item.id}
-                      className="card group animate-slide-up"
+                      className="card group cursor-pointer animate-slide-up transition-shadow hover:shadow-lg h-fit"
+                      onClick={() => toggleNews(item.id)}
                       style={{ animationDelay: `${index * 0.1}s` }}
                     >
                       <div className="relative overflow-hidden h-48">
@@ -270,19 +301,42 @@ const NewsEventsPage: React.FC = () => {
                       <div className="p-5">
                         <div className="flex items-center text-gray-500 text-sm mb-2">
                           <Calendar size={14} className="mr-1" />
-                          {item.date}
+                          {item.date.length > 0 ? item.date : "N/A"}
                         </div>
 
                         <h3 className="text-lg font-semibold mb-2 group-hover:text-primary-700 transition-colors">
                           {item.title}
                         </h3>
 
-                        <p className="text-gray-600 mb-4">{item.excerpt}</p>
+                        {/* Summary/excerpt */}
+                        {/* Combined excerpt with hidden expandable text */}
+                        <p className="text-gray-600 mb-2">
+                          {item.excerpt.slice(0, 120)}
+                          {item.excerpt.length > 120 && (
+                            <>
+                              {expandedNews !== item.id ? "..." : ""}
+                              {expandedNews === item.id && (
+                                <span className="inline">
+                                  {item.excerpt.slice(120)}
+                                </span>
+                              )}
+                            </>
+                          )}
+                        </p>
 
-                        <button className="inline-flex items-center text-primary-700 font-medium hover:text-primary-900 transition-colors">
-                          Read more
-                          <ArrowRight size={16} className="ml-1" />
-                        </button>
+                        {/* Chevron */}
+                        <div className="mt-2 text-primary-700 flex items-center font-medium transition-transform duration-300">
+                          {expandedNews === item.id ? (
+                            <span className="flex items-center">
+                              Show less <ArrowLeft size={16} className="ml-1" />
+                            </span>
+                          ) : (
+                            <span className="flex items-center">
+                              Read more{" "}
+                              <ArrowRight size={16} className="ml-1" />
+                            </span>
+                          )}
+                        </div>
                       </div>
                     </div>
                   ))}
@@ -368,10 +422,7 @@ const NewsEventsPage: React.FC = () => {
                       key={event.id}
                       className="bg-white rounded-lg shadow-md overflow-hidden"
                     >
-                      <button
-                        className="w-full text-left"
-                        onClick={() => toggleEvent(event.id)}
-                      >
+                      <div className="w-full text-left">
                         <div className="p-6 flex items-center justify-between">
                           <div>
                             <h3 className="text-xl font-bold">{event.title}</h3>
@@ -379,16 +430,16 @@ const NewsEventsPage: React.FC = () => {
                               {event.date}
                             </div>
                           </div>
-                          <ChevronDown
+                          {/* <ChevronDown
                             size={20}
                             className={`transform transition-transform duration-300 ${
                               expandedEvent === event.id ? "rotate-180" : ""
                             }`}
-                          />
+                          /> */}
                         </div>
-                      </button>
+                      </div>
 
-                      <div
+                      {/* <div
                         className={`transition-all duration-300 ${
                           expandedEvent === event.id ? "max-h-96" : "max-h-0"
                         } overflow-hidden`}
@@ -412,7 +463,7 @@ const NewsEventsPage: React.FC = () => {
                           </div>
                           <p className="text-gray-700">{event.description}</p>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   ))}
                 </div>
@@ -430,81 +481,26 @@ const NewsEventsPage: React.FC = () => {
                     <ul className="space-y-4">
                       <li className="flex">
                         <div className="bg-primary-100 text-primary-800 text-xs font-semibold px-2 py-1 rounded w-24 text-center mr-3 flex-shrink-0">
-                          MAY 2-3
+                          July 28
                         </div>
                         <div>
                           <p className="font-medium">
                             Parent-Teacher Conferences
                           </p>
-                          <p className="text-sm text-gray-600">
-                            3:00 PM - 7:00 PM
-                          </p>
                         </div>
                       </li>
                       <li className="flex">
                         <div className="bg-primary-100 text-primary-800 text-xs font-semibold px-2 py-1 rounded w-24 text-center mr-3 flex-shrink-0">
-                          MAY 12
+                          August 15
                         </div>
                         <div>
                           <p className="font-medium">Spring Concert</p>
-                          <p className="text-sm text-gray-600">7:00 PM</p>
-                        </div>
-                      </li>
-                      <li className="flex">
-                        <div className="bg-primary-100 text-primary-800 text-xs font-semibold px-2 py-1 rounded w-24 text-center mr-3 flex-shrink-0">
-                          MAY 18
-                        </div>
-                        <div>
-                          <p className="font-medium">Science Fair</p>
-                          <p className="text-sm text-gray-600">
-                            9:00 AM - 2:00 PM
-                          </p>
-                        </div>
-                      </li>
-                      <li className="flex">
-                        <div className="bg-primary-100 text-primary-800 text-xs font-semibold px-2 py-1 rounded w-24 text-center mr-3 flex-shrink-0">
-                          MAY 25-27
-                        </div>
-                        <div>
-                          <p className="font-medium">Memorial Day Weekend</p>
-                          <p className="text-sm text-gray-600">No School</p>
-                        </div>
-                      </li>
-                      <li className="flex">
-                        <div className="bg-primary-100 text-primary-800 text-xs font-semibold px-2 py-1 rounded w-24 text-center mr-3 flex-shrink-0">
-                          JUN 5
-                        </div>
-                        <div>
-                          <p className="font-medium">Annual Sports Day</p>
-                          <p className="text-sm text-gray-600">
-                            10:00 AM - 3:00 PM
-                          </p>
-                        </div>
-                      </li>
-                      <li className="flex">
-                        <div className="bg-primary-100 text-primary-800 text-xs font-semibold px-2 py-1 rounded w-24 text-center mr-3 flex-shrink-0">
-                          JUN 15
-                        </div>
-                        <div>
-                          <p className="font-medium">Graduation Ceremony</p>
-                          <p className="text-sm text-gray-600">5:00 PM</p>
-                        </div>
-                      </li>
-                      <li className="flex">
-                        <div className="bg-primary-100 text-primary-800 text-xs font-semibold px-2 py-1 rounded w-24 text-center mr-3 flex-shrink-0">
-                          JUN 18
-                        </div>
-                        <div>
-                          <p className="font-medium">Last Day of School</p>
-                          <p className="text-sm text-gray-600">
-                            Early Dismissal at 12:00 PM
-                          </p>
                         </div>
                       </li>
                     </ul>
                     <div className="mt-6">
                       <button className="w-full btn-outline">
-                        View Full Calendar
+                        <a href="/admissions#calendar">View Full Calendar</a>
                       </button>
                     </div>
                   </div>
