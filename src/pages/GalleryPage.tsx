@@ -96,6 +96,55 @@ const galleryItems: GalleryItem[] = [
     title: "Attention Focus",
     description: "Students focused on their academic pursuits.",
   },
+  {
+    id: "13",
+    image: "Gallery/Kids_Play_Area.jpg",
+    category: "Campus Life",
+    title: "Kids Play Area",
+    description: "",
+  },
+  {
+    id: "14",
+    image: "Gallery/InterClass_Comp.jpg",
+    category: "Arts",
+    title: "Inter Class Competition",
+    description: "",
+  },
+  {
+    id: "15",
+    image: "Gallery/ScienceLab.jpg",
+    category: "Academics",
+    title: "Science Lab",
+    description: "",
+  },
+  {
+    id: "16",
+    image: "Gallery/AcadAchiev.jpg",
+    category: "Academics",
+    title: "Best School Award in Academics",
+    description: "",
+  },
+  {
+    id: "17",
+    image: "Gallery/AnnualDay.jpg",
+    category: "Events",
+    title: "Annual Day Celebration",
+    description: "",
+  },
+  {
+    id: "18",
+    image: "Gallery/Celeb.jpg",
+    category: "Campus Life",
+    title: "St. Michel's Celebrations",
+    description: "",
+  },
+  {
+    id: "19",
+    image: "Gallery/KidsActivity.jpg",
+    category: "Sports",
+    title: "Fun and Interactive Kids Activity",
+    description: "",
+  },
 ];
 
 const GalleryPage: React.FC = () => {

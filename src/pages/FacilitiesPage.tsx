@@ -226,7 +226,7 @@ const DepartmentsPage: React.FC = () => {
       title: "Bandset Classes",
       description: " Enhancing rhythm, discipline, and team spirit.",
       image:
-        "https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "Facilities/Bandset.jpg",
       features: [
         "Instrument Proficiency",
         "Music Theory",
@@ -262,7 +262,7 @@ const DepartmentsPage: React.FC = () => {
       title: "Science Lab",
       description: "Hands-on learning and experimentation.",
       image:
-        "https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "Facilities/Science_Lab.jpg",
       features: ["Peer Tutoring", "Study Groups", "Academic Counseling"],
     },
     {
@@ -270,7 +270,7 @@ const DepartmentsPage: React.FC = () => {
       description:
         "A rich collection of books and resources for all age groups.",
       image:
-        "https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "Facilities/Library.png",
       features: [
         "Quiet Study Areas",
         "Research Assistance",
@@ -287,7 +287,7 @@ const DepartmentsPage: React.FC = () => {
       title: "Auditorium",
       description: "For school events, seminars, and celebration.",
       image:
-        "https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "Facilities/Auditorium.jpg",
       features: ["Event Hosting", "Performance Space", "Community Engagement"],
     },
     {
