@@ -24,9 +24,7 @@ const Footer: React.FC = () => {
             <Link to="/" className="flex items-center space-x-2 mb-4">
               <img src={logo} className="w-12" alt="logo-footer" />
               <div>
-                <h3 className="text-xl font-bold text-accent">
-                  St. Michel's English School
-                </h3>
+                <h3 className="text-xl font-bold text-accent">St. Michel's</h3>
                 <p className="text-xs text-gray-300">Excellence in Education</p>
               </div>
             </Link>
@@ -144,8 +142,8 @@ const Footer: React.FC = () => {
                   className="text-accent mr-3 mt-1 flex-shrink-0"
                 />
                 <span className="text-gray-300">
-                  Mysuru Main Road, Kanakapura , Bengaluru South District - 562
-                  117
+                  St Michael's English School, Mysore Rd, Kanakapura, Karnataka
+                  562117
                 </span>
               </li>
               <li className="flex items-center">

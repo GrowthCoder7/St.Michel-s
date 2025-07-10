@@ -26,7 +26,7 @@ const slides: HeroSlide[] = [
   },
   {
     id: 2,
-    image: "Home/slide.jpg",
+    image: "Home/primary.png",
     title: "Discover Our Programs",
     subtitle: "Comprehensive Education for Tomorrow's Leaders",
     cta: {
@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${slide.image})` }}
           />
-          <div className="absolute inset-0 bg-primary-900/40" />
+          <div className="absolute inset-0 bg-primary-900/60" />
 
           <div className="relative h-full container flex flex-col justify-center">
             <div className="max-w-3xl text-white animate-fade-in">
