@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Award, Users, Book, Clock } from "lucide-react";
 import anu from "/about/anu.jpg";
-import basrkar from "/about/basrkar.7ee952c1.jpg";
+import basrkar from "/about/bhaskar2.jpg";
 import vasantama from "/about/vasantama.png";
 import susheela from "/about/susheela.png";
 import gundama from "/about/gundama.png";
@@ -25,7 +25,7 @@ const boardMembers = [
   {
     name: "Sri.Bhaskar S",
     imgPath: basrkar,
-    desig: "Secretary cum Treasurer",
+    desig: "Secretary & Treasurer",
   },
   {
     name: "Mr.G H Veeranna",
@@ -45,7 +45,7 @@ const boardMembers = [
 ];
 const boardMembersVision = [
   {
-    name: "Smt.Anusuyadevi R. Srinivas",
+    name: "Smt. Anusuyadevi R. Srinivas",
     imgPath: anu,
     scale: 1,
     desig: "President of Devi Education School",
@@ -58,14 +58,14 @@ const boardMembersVision = [
     name: "Sri Bhaskar.S",
     imgPath: basrkar,
     scale: 1,
-    desig: "Secretary",
+    desig: "Secretary & Treasurer",
     quote:
       "An honest man is the noblest work Of God, Be swift to hear, slow to speak, slower to anger, When we educate ourselves we build the power to accomplish our goals. Knowledge has bitter roots But sweet fruits.",
     message:
       "It is an honor to be here at St. Michel 's English School of all the Arts, Thanks to the hard work of caring parents, innovative educators and very committed students.I am here not only to congratulate everyone but also to uphold this school and students. We are going ahead with new ideas and advanced methods based on education in order to give our students the best possible chance in life. Weare the nation that has always understood our future is inextricably linked to the education of our children. I believe it is time to lead a new era of mutual responsibility in education. So let us all come together for the sake Of our children's success; A new era where each of us does our part to make that success a reality: Parents and teachers.This starts with fixing the promises that no child left behind his/her goals. I believe that the goals of this law are the right ones. My aim is to educate every child with excellent coaching with an advanced way of teaching. Our school will work hard and create a history in fulfilling the needs of our students.",
   },
   {
-    name: "Smt.Vasanthamma k.",
+    name: "Smt. Vasanthamma K.",
     imgPath: vasantama,
     scale: 1.6,
     desig: `Head Mistress 
@@ -78,21 +78,21 @@ Msc, B.Ed`,
 ];
 const seniorStaff = [
   {
-    name: "Mrs.Susheela K.V",
+    name: "Mrs. Susheela K.V",
     imgPath: susheela,
     desig: "PUC NTT, Senior Staff",
     message:
       "I am in service as a teacher in this school from 28 years. My desire has been always a deserving teacher for deserved students of a deserved institution. I most of the times on different situations. am identified as St Michaers School Teacher. I always deemed it as a matter Of pride for my, this idenbfication- I am honestly proud Of the three *Qs• Quality Education. Quaified teachers, and Quality infrastructure For providing these three Qs thousands of students are enjoying unÄustatuses in the they all feel proud for being taught in the STMICHAEL'SSCHOOL THE PRIDE OF KANAKAPURA.",
   },
   {
-    name: "Mrs.Gundamma K.T",
+    name: "Mrs. Gundamma K.T",
     imgPath: gundama,
     desig: "PUC.Ded, Senior Staff",
     message:
       "I have been rendering service sincerely in this school from the last 33 years I have sought an inexpressible delight in serving the school in many capacities as teacher, under the able leadership of chief trustee mrs Anusuya Devi Srinivas and Secretary Mr Bhaskar who are potentially divine and humanitarian outlook with all those who are connected with the school namely students staff parents. I overwhelmingly appGed all the best I have in me the determination,dedication and hard work to the task at hand for the school, a unique in its own.",
   },
   {
-    name: "Smt.Nalini",
+    name: "Smt. Nalini",
     imgPath: nalini,
     desig: "PUC.Ded, Senior Staff",
     message:
@@ -122,7 +122,7 @@ const deptStaff = [
     exp: "16 years experience in Social Science",
   },
   {
-    name: "Madhu kumar B.V",
+    name: "Madhu Kumar B.V",
     imgPath: madhu,
     dept: "Technical Section",
     qualification: "B.A, B.Ed",
@@ -147,7 +147,7 @@ const AboutPage: React.FC = () => {
         <div className="absolute inset-0 bg-primary-900 opacity-90"></div>
         <div className="container relative text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-            About St. Michel's
+            About St. Michel's English School
           </h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
             Learn about our history, mission, and the values that drive our
@@ -198,7 +198,8 @@ const AboutPage: React.FC = () => {
             <div className="animate-slide-up">
               <h2 className="text-4xl font-bold mb-6">
                 welcome to{" "}
-                <span className="text-accent font-extrabold">St.Michel's</span>
+                <span className="text-accent font-extrabold">St.Michel's</span>{" "}
+                English School
               </h2>
               <div className="space-y-4 text-gray-700 text-xl">
                 <p>

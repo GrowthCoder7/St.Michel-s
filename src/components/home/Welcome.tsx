@@ -72,7 +72,7 @@ const Welcome: React.FC = () => {
 
               <Link
                 to="/about"
-                className="inline-flex items-center text-primary-700 font-medium hover:text-primary-900 transition-colors"
+                className="inline-flex text-lg md:text-xl items-center text-primary-700 font-medium  hover:text-accent transition-colors"
               >
                 Learn more about our school
                 <ArrowRight size={18} className="ml-2" />
