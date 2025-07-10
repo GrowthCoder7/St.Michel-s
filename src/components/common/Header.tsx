@@ -28,15 +28,6 @@ const navItems: NavItem[] = [
       { label: "Apply Now", path: "/admissions#apply" },
     ],
   },
-  // {
-  //   label: 'Academics',
-  //   path: '/academics',
-  //   children: [
-  //     { label: 'Curriculum', path: '/academics#curriculum' },
-  //     { label: 'Programs', path: '/academics#programs' },
-  //     { label: 'Calendar', path: '/academics#calendar' },
-  //   ]
-  // },
   { label: "Facilities", path: "/facilities" },
   { label: "Rules & Regulations", path: "/rules&reg" },
   { label: "Gallery", path: "/gallery" },
@@ -49,7 +40,6 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const location = useLocation();
 
-  // Handle hash scrolling
   useEffect(() => {
     if (location.hash) {
       const element = document.getElementById(location.hash.substring(1));
@@ -88,14 +78,12 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
       }`}
     >
       <div className="container flex items-center justify-between">
-        {/* Logo */}
         <Link
           to="/"
           className={`flex items-center space-x-2 ${
             !isScrolled && "md:text-white"
           }`}
         >
-          {/* <GraduationCap size={36} className={isScrolled ? 'text-primary-900' : 'md:text-white text-primary-900'} /> */}
           <img src="/logo.png" alt="Logo" className="w-16 h-16" />
           <div>
             <h1
@@ -115,7 +103,6 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
           </div>
         </Link>
 
-        {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-6">
           {navItems.map((item) => (
             <div
@@ -140,7 +127,6 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
                 {item.children && <ChevronDown size={16} className="ml-1" />}
               </NavLink>
 
-              {/* Dropdown Menu */}
               {item.children && (
                 <div
                   className={`absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden transition-all duration-300 origin-top-left ${
@@ -154,13 +140,11 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
                       <NavLink
                         key={child.label}
                         to={child.path}
-                        className={({ isActive }) =>
-                          `block px-4 py-2 text-sm ${
-                            isActive
-                              ? "text-accent bg-gray-50"
-                              : "text-gray-800"
-                          } hover:bg-gray-50 hover:text-accent transition-colors duration-300`
-                        }
+                        className={`block px-4 py-2 text-sm ${
+                          location.pathname + location.hash === child.path
+                            ? "bg-gray-50 text-accent"
+                            : "text-gray-800"
+                        } hover:bg-gray-50 hover:text-accent transition-colors duration-300`}
                         onClick={() => setActiveDropdown(null)}
                       >
                         {child.label}
@@ -173,7 +157,6 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
           ))}
         </nav>
 
-        {/* Mobile Menu Button */}
         <button
           className={`lg:hidden ${
             isScrolled ? "text-gray-800" : "text-white"
@@ -185,7 +168,6 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
         </button>
       </div>
 
-      {/* Mobile Navigation */}
       <div
         className={`lg:hidden fixed inset-0 bg-white z-40 transition-transform duration-300 transform ${
           mobileMenuOpen ? "translate-x-0" : "translate-x-full"
@@ -232,7 +214,6 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
                   )}
                 </div>
 
-                {/* Mobile Dropdown */}
                 {item.children && (
                   <div
                     className={`pl-4 overflow-hidden transition-all duration-300 ${
@@ -243,11 +224,11 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
                       <NavLink
                         key={child.label}
                         to={child.path}
-                        className={({ isActive }) =>
-                          `block py-2 text-sm ${
-                            isActive ? "text-accent" : "text-gray-600"
-                          } hover:text-accent`
-                        }
+                        className={`block py-2 text-sm ${
+                          location.pathname + location.hash === child.path
+                            ? "text-accent"
+                            : "text-gray-600"
+                        } hover:text-accent`}
                         onClick={() => setMobileMenuOpen(false)}
                       >
                         {child.label}

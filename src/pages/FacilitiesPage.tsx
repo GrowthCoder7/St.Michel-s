@@ -225,8 +225,7 @@ const DepartmentsPage: React.FC = () => {
     {
       title: "Bandset Classes",
       description: " Enhancing rhythm, discipline, and team spirit.",
-      image:
-        "Facilities/Bandset.jpg",
+      image: "Facilities/band.jpg",
       features: [
         "Instrument Proficiency",
         "Music Theory",
@@ -252,7 +251,7 @@ const DepartmentsPage: React.FC = () => {
     {
       title: "Huge Play Area ",
       description: "For physical development and recreational activities.",
-      image: "Facilities/PlayArea.png",
+      image: "Facilities/playg.jpg",
       features: ["Sports Activities", "Team Building", "Physical Fitness"],
     },
   ];
@@ -261,16 +260,14 @@ const DepartmentsPage: React.FC = () => {
     {
       title: "Science Lab",
       description: "Hands-on learning and experimentation.",
-      image:
-        "Facilities/Science_Lab.jpg",
+      image: "Facilities/Science_Lab.jpg",
       features: ["Peer Tutoring", "Study Groups", "Academic Counseling"],
     },
     {
       title: "Library",
       description:
         "A rich collection of books and resources for all age groups.",
-      image:
-        "Facilities/Library.png",
+      image: "Facilities/Library.png",
       features: [
         "Quiet Study Areas",
         "Research Assistance",
@@ -286,8 +283,7 @@ const DepartmentsPage: React.FC = () => {
     {
       title: "Auditorium",
       description: "For school events, seminars, and celebration.",
-      image:
-        "Facilities/Auditorium.jpg",
+      image: "Facilities/Auditorium.jpg",
       features: ["Event Hosting", "Performance Space", "Community Engagement"],
     },
     {
@@ -477,12 +473,18 @@ const DepartmentsPage: React.FC = () => {
                 more about enrollment and participation.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-300 shadow-md hover:shadow-lg">
+                <a
+                  href="admissions"
+                  className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-300 shadow-md hover:shadow-lg cursor-pointer"
+                >
                   Contact Admissions
-                </button>
-                <button className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-600 hover:text-white transition-all duration-300">
+                </a>
+                <a
+                  href="contact"
+                  className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-600 hover:text-white transition-all duration-300 cursor-pointer"
+                >
                   Schedule Tour
-                </button>
+                </a>
               </div>
             </div>
           </div>
