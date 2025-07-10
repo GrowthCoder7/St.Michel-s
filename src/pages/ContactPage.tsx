@@ -150,7 +150,9 @@ const ContactPage: React.FC = () => {
               </div>
               <h3 className="text-lg font-semibold mb-2">Our Location</h3>
               <p className="text-gray-700">
-                Mysuru Main Road, Kanakapura, Bengaluru South District - 562 117
+                Mysore Road, Kanakapura
+                <br />
+                Karnataka 562117
                 <br />
                 India
               </p>
@@ -186,26 +188,22 @@ const ContactPage: React.FC = () => {
                 <Mail size={24} className="text-primary-900" />
               </div>
               <h3 className="text-lg font-semibold mb-2">Email Addresses</h3>
-
-              <p className="text-gray-700 mb-2 break-words">
+              <p className="text-gray-700 mb-2">
                 <span className="block font-medium">General Inquiries:</span>
                 <a
                   href="mailto:info@stmichels.edu"
-                  className="hover:text-accent text-primary-800 break-words"
+                  className="hover:text-primary-900"
                 >
-                  stmichelsurveyforms@gmail.com
+                  info@stmichels.edu
                 </a>
               </p>
-
-              <p className="text-gray-700 break-words">
-                <span className="block text-center font-medium">
-                  Admissions:
-                </span>
+              <p className="text-gray-700">
+                <span className="block font-medium">Admissions:</span>
                 <a
                   href="mailto:admissions@stmichels.edu"
-                  className="hover:text-accent text-primary-800 break-words"
+                  className="hover:text-primary-900"
                 >
-                  st.michelsenglishschool@gmail.com
+                  admissions@stmichels.edu
                 </a>
               </p>
             </motion.div>
@@ -222,12 +220,8 @@ const ContactPage: React.FC = () => {
                 <span className="block font-medium">Monday - Friday:</span>
                 9:30 AM - 4:30 PM
               </p>
-              <p className="text-gray-700 mb-2">
-                <span className="block font-medium">Saturday:</span>
-                9:30 AM to 1:30 PM
-              </p>
               <p className="text-gray-700">
-                <span className="block font-medium">Sunday:</span>
+                <span className="block font-medium">Saturday - Sunday:</span>
                 Closed
               </p>
             </motion.div>
@@ -344,16 +338,7 @@ const ContactPage: React.FC = () => {
                         <option value="Baby Class">Baby Class</option>
                         <option value="L.K.G">L.K.G</option>
                         <option value="U.K.G">U.K.G</option>
-                        <option value="Class 1">Class 1</option>
-                        <option value="Class 2">Class 2</option>
-                        <option value="Class 3">Class 3</option>
-                        <option value="Class 4">Class 4</option>
-                        <option value="Class 5">Class 5</option>
-                        <option value="Class 6">Class 6</option>
-                        <option value="Class 7">Class 7</option>
-                        <option value="Class 8">Class 8</option>
-                        <option value="Class 9">Class 9</option>
-                        <option value="Class 10">Class 10</option>
+                        <option value="Class 1-10">Class 1-10</option>
                       </select>
                     </div>
                   </div>
