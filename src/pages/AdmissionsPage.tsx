@@ -465,7 +465,10 @@ const AdmissionsPage: React.FC = () => {
       </section>
 
       {/* FAQ Section */}
-      <FAQAccordion />
+      <section id="faq">
+
+      <FAQAccordion/>
+      </section>
       {/* <section className="section bg-gray-50">
         <div className="container">
           <div className="section-title">

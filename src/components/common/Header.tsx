@@ -25,7 +25,9 @@ const navItems: NavItem[] = [
     children: [
       { label: "Process", path: "/admissions#process" },
       { label: "Requirements", path: "/admissions#requirements" },
+      { label: "Academic Calendar", path: "/admissions#calendar" },
       { label: "Apply Now", path: "/admissions#apply" },
+      { label: "FAQs", path: "/admissions#faq" },
     ],
   },
   { label: "Facilities", path: "/facilities" },
