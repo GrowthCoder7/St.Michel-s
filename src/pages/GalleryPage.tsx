@@ -1,10 +1,31 @@
 import React, { useState, useEffect } from "react";
 import { GalleryItem } from "../types";
+import g1 from "/Gallery/g1.png";
+import g2 from "/Gallery/g2.png";
+import g3 from "/Gallery/g3.png";
+import g4 from "/Gallery/g4.png";
+import g5 from "/Gallery/g5.png";
+import g6 from "/Gallery/g6.png";
+import g7 from "/Gallery/g7.png";
+import g8 from "/Gallery/g8.png";
+import g9 from "/Gallery/g9.png";
+import g10 from "/Gallery/g10.png";
+import g11 from "/Gallery/Physical.png";
+import g12 from "/Gallery/Focus.png";
+import g13 from "/Gallery/Kids_Play_Area.jpg";
+import g14 from "/Gallery/InterClass_Comp.jpg";
+import g15 from "/Gallery/ScienceLab.jpg";
+import g16 from "/Gallery/AcadAchiev.jpg";
+import g17 from "/Gallery/AnnualDay.jpg";
+import g18 from "/Gallery/Celeb.jpg";
+import g19 from "/Gallery/KidsActivity.jpg";
+import g20 from "/Gallery/g20.png";
+import g21 from "/Gallery/g21.png";
 
 const galleryItems: GalleryItem[] = [
   {
     id: "1",
-    image: "Gallery/g1.png",
+    image: g1,
     category: "Events",
     title: "Prize Distribution",
     description:
@@ -12,7 +33,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: "2",
-    image: "Gallery/g2.png",
+    image: g2,
     category: "Academics",
     title: "Computer Science Laboratory",
     description:
@@ -20,7 +41,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: "3",
-    image: "Gallery/g3.png",
+    image: g3,
     category: "Campus Life",
     title: "Indoor Play Area",
     description:
@@ -28,7 +49,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: "4",
-    image: "Gallery/g4.png",
+    image: g4,
     category: "Events",
     title: "Teacher's Day Celebration",
     description:
@@ -36,7 +57,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: "5",
-    image: "Gallery/g5.png",
+    image: g5,
     category: "Arts",
     title: "Creative Expression",
     description:
@@ -44,7 +65,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: "6",
-    image: "Gallery/g6.png",
+    image: g6,
     category: "Campus Life",
     title: "Graduation Ceremony",
     description:
@@ -52,7 +73,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: "7",
-    image: "Gallery/g7.png",
+    image: g7,
     category: "Campus Life",
     title: "Morning Assembly",
     description:
@@ -60,7 +81,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: "8",
-    image: "Gallery/g8.png",
+    image: g8,
     category: "Academics",
     title: "Outdoor Learning",
     description:
@@ -68,7 +89,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: "9",
-    image: "Gallery/g9.png",
+    image: g9,
     category: "Events",
     title: "Independence Day Celebration",
     description:
@@ -76,7 +97,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: "10",
-    image: "Gallery/g10.png",
+    image: g10,
     category: "Campus Life",
     title: "Extracurricular Activities",
     description:
@@ -84,63 +105,63 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: "11",
-    image: "Gallery/Physical.png",
+    image: g11,
     category: "Sports",
     title: "Physical Education",
     description: "Students participating in physical education activities.",
   },
   {
     id: "12",
-    image: "Gallery/Focus.png",
+    image: g12,
     category: "Academics",
     title: "Attention Focus",
     description: "Students focused on their academic pursuits.",
   },
   {
     id: "13",
-    image: "Gallery/Kids_Play_Area.jpg",
+    image: g13,
     category: "Campus Life",
     title: "Kids Play Area",
     description: "",
   },
   {
     id: "14",
-    image: "Gallery/InterClass_Comp.jpg",
+    image: g14,
     category: "Arts",
     title: "Inter Class Competition",
     description: "",
   },
   {
     id: "15",
-    image: "Gallery/ScienceLab.jpg",
+    image: g15,
     category: "Academics",
     title: "Science Lab",
     description: "",
   },
   {
     id: "16",
-    image: "Gallery/AcadAchiev.jpg",
+    image: g16,
     category: "Academics",
     title: "Best School Award in Academics",
     description: "",
   },
   {
     id: "17",
-    image: "Gallery/AnnualDay.jpg",
+    image: g17,
     category: "Events",
     title: "Annual Day Celebration",
     description: "",
   },
   {
     id: "18",
-    image: "Gallery/Celeb.jpg",
+    image: g18,
     category: "Campus Life",
     title: "St. Michel's Celebrations",
     description: "",
   },
   {
     id: "19",
-    image: "Gallery/KidsActivity.jpg",
+    image: g19,
     category: "Sports",
     title: "Fun and Interactive Kids Activity",
     description: "",

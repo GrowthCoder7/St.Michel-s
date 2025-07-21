@@ -205,6 +205,23 @@
 // export default DepartmentsPage;
 
 import React, { useState, useEffect } from "react";
+import f1 from "/Facilities/Karate.png";
+import f2 from "/Facilities/band.jpg";
+import f3 from "/Facilities/Scouts.png";
+import f4 from "/Facilities/Cultural.png";
+import f5 from "/Facilities/playg.jpg";
+import f6 from "/Facilities/Science_Lab.jpg";
+import f7 from "/Facilities/Library.png";
+import f8 from "/Facilities/Classroom.png";
+import f9 from "/Facilities/Auditorium.jpg";
+import f10 from "/Facilities/Digital.jpg";
+import f11 from "/Facilities/Student_Comm.jpg";
+import f12 from "/Facilities/Security.png";
+import f13 from "/Facilities/Bus.png";
+import f14 from "/Facilities/BusTracking.png";
+import f15 from "/Facilities/Staff.jpg";
+
+
 
 const DepartmentsPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<
@@ -219,13 +236,13 @@ const DepartmentsPage: React.FC = () => {
     {
       title: "Karate & Dance Classes",
       description: " For physical fitness and creative expression.",
-      image: "Facilities/Karate.png",
+      image: f1,
       features: ["Self-Defense Skills", "Discipline", "Confidence Building"],
     },
     {
       title: "Bandset Classes",
       description: " Enhancing rhythm, discipline, and team spirit.",
-      image: "Facilities/band.jpg",
+      image: f2,
       features: [
         "Instrument Proficiency",
         "Music Theory",
@@ -235,13 +252,13 @@ const DepartmentsPage: React.FC = () => {
     {
       title: "Scouts and Guides",
       description: "Instilling responsibility, leadership, and service values.",
-      image: "Facilities/Scouts.png",
+      image: f3,
       features: ["Outdoor Skills", "Community Service", "Leadership Training"],
     },
     {
       title: "Cultural Activity Clubs",
       description: "Promoting talent in music, drama, drawing, and more.",
-      image: "Facilities/Cultural.png",
+      image: f4,
       features: [
         "Leadership Development",
         "Event Planning",
@@ -251,7 +268,7 @@ const DepartmentsPage: React.FC = () => {
     {
       title: "Huge Play Area ",
       description: "For physical development and recreational activities.",
-      image: "Facilities/playg.jpg",
+      image: f5,
       features: ["Sports Activities", "Team Building", "Physical Fitness"],
     },
   ];
@@ -260,14 +277,14 @@ const DepartmentsPage: React.FC = () => {
     {
       title: "Science Lab",
       description: "Hands-on learning and experimentation.",
-      image: "Facilities/Science_Lab.jpg",
+      image: f6,
       features: ["Peer Tutoring", "Study Groups", "Academic Counseling"],
     },
     {
       title: "Library",
       description:
         "A rich collection of books and resources for all age groups.",
-      image: "Facilities/Library.png",
+      image: f7,
       features: [
         "Quiet Study Areas",
         "Research Assistance",
@@ -277,25 +294,25 @@ const DepartmentsPage: React.FC = () => {
     {
       title: "3D Smart Classrooms",
       description: "Interactive learning using advanced technology.",
-      image: "Facilities/Classroom.png",
+      image: f8,
       features: ["Research Databases", "Study Spaces", "Technology Access"],
     },
     {
       title: "Auditorium",
       description: "For school events, seminars, and celebration.",
-      image: "Facilities/Auditorium.jpg",
+      image: f9,
       features: ["Event Hosting", "Performance Space", "Community Engagement"],
     },
     {
       title: "Digital Learning App",
       description: " Supporting home learning and academic revision.",
-      image: "Facilities/Digital.jpg",
+      image: f10,
       features: ["Digital Classrooms", "Coding Programs", "Tech Support"],
     },
     {
       title: "Student Communication App",
       description: "Updates, notices, homework, and attendance.",
-      image: "Facilities/Student_Comm.jpg",
+      image: f11,
       features: [
         "IEP Support",
         "Learning Accommodations",
@@ -308,7 +325,7 @@ const DepartmentsPage: React.FC = () => {
     {
       title: "CCTV Surveillance",
       description: "24/7 monitoring across the campus for complete security.",
-      image: "Facilities/Security.png",
+      image: f12,
       features: [
         "24/7 Monitoring",
         "Campus-wide Coverage",
@@ -318,20 +335,20 @@ const DepartmentsPage: React.FC = () => {
     {
       title: "School Transportation",
       description: "Safe and reliable bus services across routes.",
-      image: "Facilities/Bus.png",
+      image: f13,
       features: ["Trained Drivers", "Regular Maintenance", "Multiple Routes"],
     },
     {
       title: "School Bus Tracking System",
       description: "Real-time location updates for parents.",
-      image: "Facilities/BusTracking.png",
+      image: f14,
       features: ["GPS Tracking", "Parent Notifications", "Real-time Updates"],
     },
     {
       title: "Dedicated Staff",
       description:
         "40+ Teaching Staff and 30+ Non-Teaching Staff ensuring quality education and care.",
-      image: "Facilities/Staff.jpg",
+      image: f15,
       features: ["Trained Personnel", "Experienced Teachers", "Caring Staff"],
     },
   ];

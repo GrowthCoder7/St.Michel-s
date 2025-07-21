@@ -2,41 +2,47 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { GalleryItem } from '../../types';
+import h1 from "/Home/Gallery/hg1.png"
+import h2 from "/Home/Gallery/hg2.png"
+import h3 from "/Home/Gallery/hg3.png"
+import h4 from "/Home/Gallery/hg4.png"
+import h5 from "/Home/Gallery/hg5.png"
+import h6 from "/Home/Gallery/hg6.png"
 
 const galleryItems: GalleryItem[] = [
   {
     id: '1',
-    image: 'Home/Gallery/hg1.png',
+    image: h1,
     category: '',
     title: '',
   },
   {
     id: '2',
-    image: 'Home/Gallery/hg2.png',
+    image: h2,
     category: '',
     title: '',
   },
   {
     id: '3',
-    image: 'Home/Gallery/hg3.png',
+    image: h3,
     category: '',
     title: '',
   },
   {
     id: '4',
-    image: 'Home/Gallery/hg4.png',
+    image: h4,
     category: '',
     title: '',
   },
   {
     id: '5',
-    image: 'Home/Gallery/hg5.png',
+    image: h5,
     category: '',
     title: '',
   },
   {
     id: '6',
-    image: 'Home/Gallery/hg6.png',
+    image: h6,
     category: '',
     title: '',
   },
