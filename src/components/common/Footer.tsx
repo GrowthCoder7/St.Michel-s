@@ -104,11 +104,11 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link
-                  to="/student-life"
+                  to="/rules&reg"
                   className="text-gray-300 hover:text-accent transition-colors flex items-center"
                 >
                   <ArrowRight size={14} className="mr-2" />
-                  Student Life
+                  Rules & Regulations
                 </Link>
               </li>
               <li>
