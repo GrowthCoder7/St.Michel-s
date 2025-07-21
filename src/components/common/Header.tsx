@@ -86,7 +86,11 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
             !isScrolled && "md:text-white"
           }`}
         >
-          <img src="/logo.png" alt="Logo" className="w-16 h-16" />
+          <img
+            src={`${import.meta.env.BASE_URL}logo.png`}
+            alt="Logo"
+            className="w-16 h-16"
+          />
           <div>
             <h1
               className={`text-base font-bold ${
