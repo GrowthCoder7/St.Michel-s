@@ -16,7 +16,7 @@ interface HeroSlide {
 const slides: HeroSlide[] = [
   {
     id: 1,
-    image: "Home/Hero1.jpg",
+    image: `${import.meta.env.BASE_URL}Home/Hero1.jpg`,
     title: "Welcome to St. Michel's",
     subtitle: "Where Knowledge Meets Excellence",
     cta: {
@@ -26,7 +26,7 @@ const slides: HeroSlide[] = [
   },
   {
     id: 2,
-    image: "Home/slide.jpg",
+    image: `${import.meta.env.BASE_URL}Home/slide.jpg`,
     title: "Discover Our Programs",
     subtitle: "Comprehensive Education for Tomorrow's Leaders",
     cta: {
@@ -36,7 +36,7 @@ const slides: HeroSlide[] = [
   },
   {
     id: 3,
-    image: "Home/Hero2.png",
+    image: `${import.meta.env.BASE_URL}Home/Hero2.png`,
     title: "Join Our Community",
     subtitle: "A Supportive Environment for Every Student",
     cta: {

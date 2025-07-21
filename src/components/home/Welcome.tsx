@@ -11,7 +11,7 @@ const Welcome: React.FC = () => {
           <div className="animate-slide-up">
             <div className="relative">
               <img
-                src="Home/Welcome1.png"
+                src={`${import.meta.env.BASE_URL}Home/Welcome1.png`}
                 alt="Principal of St. Michel's"
                 className="rounded-lg shadow-xl max-w-full h-auto object-cover"
               />
