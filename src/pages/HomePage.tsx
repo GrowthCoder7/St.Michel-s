@@ -7,6 +7,7 @@ import Welcome from "../components/home/Welcome";
 import Programs from "../components/home/Programs";
 import Gallery from "../components/home/Gallery";
 import Testimonials from "../components/home/Testimonials";
+import AssistantHeadmasterViews from "../components/home/AssistantHeadmasterViews";
 
 const HomePage: React.FC = () => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const HomePage: React.FC = () => {
     <div className="w-[110vw] md:w-full overflow-x-hidden">
       <Hero />
       <Welcome />
+      <AssistantHeadmasterViews/>
       <Programs />
       {/*News component removed  */}
       <Gallery />
