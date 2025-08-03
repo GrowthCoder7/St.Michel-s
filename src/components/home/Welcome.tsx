@@ -9,20 +9,12 @@ const Welcome: React.FC = () => {
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-slide-up">
-            <div className="relative">
+            <div className="relative flex justify-center">
               <img
-                src={`${import.meta.env.BASE_URL}Home/Welcome1.png`}
+                src={`${import.meta.env.BASE_URL}Home/hm.jpg`}
                 alt="Principal of St. Michel's"
                 className="rounded-lg shadow-xl max-w-full h-auto object-cover"
               />
-              <div className="absolute -bottom-6 -right-6 bg-accent p-4 rounded-lg shadow-lg">
-                <p className="text-sm font-medium text-primary-900">
-                  Established in 1981
-                </p>
-                <p className="text-2xl font-bold text-primary-900">
-                  45+ Years of Excellence
-                </p>
-              </div>
             </div>
           </div>
 
@@ -60,10 +52,6 @@ const Welcome: React.FC = () => {
               </div>
 
               <div className="flex items-center mb-8">
-                <img
-                  src={vasantama}
-                  className="w-16 h-16 rounded-full object-cover mr-4"
-                />
                 <div>
                   <h4 className="font-semibold text-lg">VASANTHAMMA K</h4>
                   <p className="text-gray-600">Headmistress, St. Michel's</p>

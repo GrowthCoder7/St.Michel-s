@@ -121,13 +121,6 @@ const deptStaff = [
     qualification: "B.A, D.Ed",
     exp: "16 years experience in Social Science",
   },
-  {
-    name: "Madhu Kumar B.V",
-    imgPath: madhu,
-    dept: "Technical Section",
-    qualification: "B.A, B.Ed",
-    exp: "13 years experience in Maths & English",
-  },
 ];
 
 const AboutPage: React.FC = () => {
@@ -177,7 +170,7 @@ const AboutPage: React.FC = () => {
               style={{ animationDelay: "0.2s" }}
             >
               <Book size={40} className="mx-auto mb-4 text-accent" />
-              <h3 className="text-3xl font-bold mb-2">50+</h3>
+              <h3 className="text-3xl font-bold mb-2">70+</h3>
               <p className="text-gray-600">Staffs</p>
             </div>
             <div
