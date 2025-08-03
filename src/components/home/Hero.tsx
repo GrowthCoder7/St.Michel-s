@@ -36,12 +36,22 @@ const slides: HeroSlide[] = [
   },
   {
     id: 3,
-    image: `${import.meta.env.BASE_URL}Home/Hero2.png`,
+    image: `${import.meta.env.BASE_URL}Home/af44.jpg`,
     title: "Join Our Community",
     subtitle: "A Supportive Environment for Every Student",
     cta: {
       text: "View Academics",
       link: "/academics",
+    },
+  },
+  {
+    id: 4,
+    image: `${import.meta.env.BASE_URL}Home/aerial2.jpg`,
+    title: "Know More About Us",
+    subtitle: "A Warm & Welcoming Environment for Every Student",
+    cta: {
+      text: "Learn About Us",
+      link: "/about",
     },
   },
 ];

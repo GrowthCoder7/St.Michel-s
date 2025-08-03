@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import calendarData from "../calendarData.json";
 
+// The types and constants remain the same
 type CalendarEntry = {
   Date: number;
   Day: string | null;
@@ -24,55 +24,128 @@ const monthNames = [
   "December",
 ];
 
+/**
+ * Parses a CSV string into an array of CalendarEntry objects.
+ * Assumes the CSV has headers: Date,Day,Occasion
+ */
+const parseCSV = (csvText: string): CalendarEntry[] => {
+  return csvText
+    .trim()
+    .split("\n")
+    .slice(1) // Skip header row
+    .map((line) => {
+      const [dateStr, day, occasion] = line.split(",");
+      return {
+        Date: parseInt(dateStr, 10),
+        Day: day?.trim() || null,
+        Note: occasion?.trim() || "",
+      };
+    })
+    .filter((entry) => !isNaN(entry.Date)); // Filter out any invalid lines
+};
+
+/**
+ * Groups a flat array of daily entries for the academic year (May '25 - Apr '26) into a per-month structure.
+ */
 const groupCalendarData = (data: CalendarEntry[]) => {
   const grouped: Record<string, CalendarEntry[]> = {};
-  const monthDayCounts = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]; // For 2025
-  let index = 0;
+  // Day counts for May '25 -> Apr '26
+  const monthDayCounts = [
+    31, // May '25
+    30, // Jun '25
+    31, // Jul '25
+    31, // Aug '25
+    30, // Sep '25
+    31, // Oct '25
+    30, // Nov '25
+    31, // Dec '25
+    31, // Jan '26
+    28, // Feb '26 (2026 is not a leap year)
+    31, // Mar '26
+    30, // Apr '26
+  ];
+  let dataIndex = 0;
 
-  for (let month = 0; month < 12; month++) {
-    const count = monthDayCounts[month];
-    const monthEntries = data.slice(index, index + count);
-    const key = `2025-${String(month + 1).padStart(2, "0")}`;
+  for (let i = 0; i < 12; i++) {
+    const month = (4 + i) % 12; // Start from May (index 4)
+    const year = 2025 + Math.floor((4 + i) / 12);
+
+    const dayCount = monthDayCounts[i];
+    const monthEntries = data.slice(dataIndex, dataIndex + dayCount);
+
+    const key = `${year}-${String(month + 1).padStart(2, "0")}`;
     grouped[key] = monthEntries;
-    index += count;
-  }
 
+    dataIndex += dayCount;
+  }
   return grouped;
 };
 
-const groupedData = groupCalendarData(calendarData);
-
 const CalendarGrid: React.FC = () => {
+  // State for storing fetched data and loading status
+  const [allCalendarData, setAllCalendarData] = useState<CalendarEntry[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  // State for calendar navigation and UI
   const today = new Date();
-  const [currentYear, setCurrentYear] = useState(today.getFullYear());
-  const [currentMonth, setCurrentMonth] = useState(today.getMonth());
+  // Set the calendar to start at May 2025
+  const [currentYear, setCurrentYear] = useState(2025);
+  const [currentMonth, setCurrentMonth] = useState(4); // 0-indexed: 4 is May
   const [selectedNote, setSelectedNote] = useState<string | null>(null);
 
+  // Fetch and parse the CSV data on component mount (unchanged)
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/calendarData.csv"); // Fetches from the public folder
+        if (!response.ok)
+          throw new Error(
+            `Network response was not ok: ${response.statusText}`
+          );
+        const csvText = await response.text();
+        const parsedData = parseCSV(csvText);
+        setAllCalendarData(parsedData);
+      } catch (error) {
+        console.error("Failed to fetch or parse calendar data:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    fetchData();
+  }, []); // The empty dependency array ensures this runs only once
+
+  // Memoize the grouped data to prevent re-computation on every render
+  const groupedData = useMemo(() => {
+    if (allCalendarData.length === 0) return {};
+    return groupCalendarData(allCalendarData);
+  }, [allCalendarData]);
+
+  // Helper functions
   const getDaysInMonth = (year: number, month: number) =>
     new Date(year, month + 1, 0).getDate();
-
   const getStartDayIndex = (year: number, month: number) =>
     new Date(year, month, 1).getDay();
-
   const getMonthData = (year: number, month: number): CalendarEntry[] => {
     const key = `${year}-${String(month + 1).padStart(2, "0")}`;
     return groupedData[key] || [];
   };
 
+  // Navigation functions with updated boundaries
   const goToPreviousMonth = () => {
-    if (currentYear === 2025 && currentMonth === 0) return;
+    if (currentYear === 2025 && currentMonth === 4) return; // Stop at May 2025
     setCurrentMonth(currentMonth === 0 ? 11 : currentMonth - 1);
     if (currentMonth === 0) setCurrentYear(currentYear - 1);
     setSelectedNote(null);
   };
 
   const goToNextMonth = () => {
-    if (currentYear === 2025 && currentMonth === 11) return;
+    if (currentYear === 2026 && currentMonth === 3) return; // Stop at April 2026
     setCurrentMonth(currentMonth === 11 ? 0 : currentMonth + 1);
     if (currentMonth === 11) setCurrentYear(currentYear + 1);
     setSelectedNote(null);
   };
 
+  // Prepare data for rendering the grid
   const data = getMonthData(currentYear, currentMonth);
   const startDayIndex = getStartDayIndex(currentYear, currentMonth);
   const totalDays = getDaysInMonth(currentYear, currentMonth);
@@ -86,8 +159,17 @@ const CalendarGrid: React.FC = () => {
   const totalCells = Math.ceil(cells.length / 7) * 7;
   while (cells.length < totalCells) cells.push(null);
 
-  const isPreviousDisabled = currentYear === 2025 && currentMonth === 0;
-  const isNextDisabled = currentYear === 2025 && currentMonth === 11;
+  // Update button disabling logic for the new date range
+  const isPreviousDisabled = currentYear === 2025 && currentMonth === 4;
+  const isNextDisabled = currentYear === 2026 && currentMonth === 3;
+
+  if (isLoading) {
+    return (
+      <div className="text-center p-10 font-semibold text-lg">
+        Loading Calendar... 🗓️
+      </div>
+    );
+  }
 
   return (
     <div className="max-w-5xl relative mx-auto p-4 sm:p-6">
