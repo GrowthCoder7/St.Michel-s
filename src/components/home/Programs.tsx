@@ -21,13 +21,13 @@ const programs: Program[] = [
     icon: <Award size={32} className="text-accent" />,
     title: 'Arts & Creativity',
     description: 'From visual arts to performing arts, students can explore their creative talents through diverse programs and showcases.',
-    link: '/student-life#arts',
+    link: '/extracurricular',
   },
   {
     icon: <Users size={32} className="text-accent" />,
     title: 'Athletic Development',
     description: 'Our comprehensive sports program promotes teamwork, discipline, and physical fitness through various competitive and recreational activities.',
-    link: '/student-life#sports',
+    link: '/extracurricular',
   },
   {
     icon: <Lightbulb size={32} className="text-accent" />,

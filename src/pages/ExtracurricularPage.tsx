@@ -188,13 +188,6 @@ const ExtracurricularPage: React.FC = () => {
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-2">{activity.title}</h3>
                     <p className="text-gray-600 mb-4">{activity.description}</p>
-                    <Link
-                      to={`/activities/${activity.id}`}
-                      className="inline-flex items-center text-primary-700 font-medium hover:text-primary-900"
-                    >
-                      Learn more
-                      <ArrowRight size={16} className="ml-1" />
-                    </Link>
                   </div>
                 </div>
               </SwiperSlide>
@@ -231,38 +224,38 @@ const ExtracurricularPage: React.FC = () => {
                 <ul className="space-y-4">
                   <li>
                     <Link
-                      to="/calendar"
+                      to="/admissions#calendar"
                       className="flex items-center text-primary-700 hover:text-primary-900"
                     >
                       <ArrowRight size={16} className="mr-2" />
-                      Activities Calendar
+                      Academic Calendar
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="/clubs"
+                      to="/admissions#apply"
                       className="flex items-center text-primary-700 hover:text-primary-900"
                     >
                       <ArrowRight size={16} className="mr-2" />
-                      Club Directory
+                      Admissions & Registration
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="/forms"
+                      to="/rules&reg"
                       className="flex items-center text-primary-700 hover:text-primary-900"
                     >
                       <ArrowRight size={16} className="mr-2" />
-                      Activity Registration Forms
+                      Rules & Regulations
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="/policies"
+                      to="/contact"
                       className="flex items-center text-primary-700 hover:text-primary-900"
                     >
                       <ArrowRight size={16} className="mr-2" />
-                      Activity Policies & Guidelines
+                      Contact Us
                     </Link>
                   </li>
                 </ul>

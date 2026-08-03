@@ -34,41 +34,43 @@ const parseCSV = (csvText: string): CalendarEntry[] => {
     .split("\n")
     .slice(1) // Skip header row
     .map((line) => {
-      const [dateStr, day, occasion] = line.split(",");
+      const [dateStr, day, ...rest] = line.split(",");
+      // Rejoin and unquote so notes containing commas survive intact
+      const occasion = rest.join(",").trim().replace(/^"|"$/g, "");
       return {
         Date: parseInt(dateStr, 10),
         Day: day?.trim() || null,
-        Note: occasion?.trim() || "",
+        Note: occasion.trim(),
       };
     })
     .filter((entry) => !isNaN(entry.Date)); // Filter out any invalid lines
 };
 
 /**
- * Groups a flat array of daily entries for the academic year (May '25 - Apr '26) into a per-month structure.
+ * Groups a flat array of daily entries for the academic year (May '26 - Apr '27) into a per-month structure.
  */
 const groupCalendarData = (data: CalendarEntry[]) => {
   const grouped: Record<string, CalendarEntry[]> = {};
-  // Day counts for May '25 -> Apr '26
+  // Day counts for May '26 -> Apr '27
   const monthDayCounts = [
-    31, // May '25
-    30, // Jun '25
-    31, // Jul '25
-    31, // Aug '25
-    30, // Sep '25
-    31, // Oct '25
-    30, // Nov '25
-    31, // Dec '25
-    31, // Jan '26
-    28, // Feb '26 (2026 is not a leap year)
-    31, // Mar '26
-    30, // Apr '26
+    31, // May '26
+    30, // Jun '26
+    31, // Jul '26
+    31, // Aug '26
+    30, // Sep '26
+    31, // Oct '26
+    30, // Nov '26
+    31, // Dec '26
+    31, // Jan '27
+    28, // Feb '27 (2027 is not a leap year)
+    31, // Mar '27
+    30, // Apr '27
   ];
   let dataIndex = 0;
 
   for (let i = 0; i < 12; i++) {
     const month = (4 + i) % 12; // Start from May (index 4)
-    const year = 2025 + Math.floor((4 + i) / 12);
+    const year = 2026 + Math.floor((4 + i) / 12);
 
     const dayCount = monthDayCounts[i];
     const monthEntries = data.slice(dataIndex, dataIndex + dayCount);
@@ -88,8 +90,8 @@ const CalendarGrid: React.FC = () => {
 
   // State for calendar navigation and UI
   const today = new Date();
-  // Set the calendar to start at May 2025
-  const [currentYear, setCurrentYear] = useState(2025);
+  // Set the calendar to start at May 2026
+  const [currentYear, setCurrentYear] = useState(2026);
   const [currentMonth, setCurrentMonth] = useState(4); // 0-indexed: 4 is May
   const [selectedNote, setSelectedNote] = useState<string | null>(null);
 
@@ -132,14 +134,14 @@ const CalendarGrid: React.FC = () => {
 
   // Navigation functions with updated boundaries
   const goToPreviousMonth = () => {
-    if (currentYear === 2025 && currentMonth === 4) return; // Stop at May 2025
+    if (currentYear === 2026 && currentMonth === 4) return; // Stop at May 2026
     setCurrentMonth(currentMonth === 0 ? 11 : currentMonth - 1);
     if (currentMonth === 0) setCurrentYear(currentYear - 1);
     setSelectedNote(null);
   };
 
   const goToNextMonth = () => {
-    if (currentYear === 2026 && currentMonth === 3) return; // Stop at April 2026
+    if (currentYear === 2027 && currentMonth === 3) return; // Stop at April 2027
     setCurrentMonth(currentMonth === 11 ? 0 : currentMonth + 1);
     if (currentMonth === 11) setCurrentYear(currentYear + 1);
     setSelectedNote(null);
@@ -160,8 +162,8 @@ const CalendarGrid: React.FC = () => {
   while (cells.length < totalCells) cells.push(null);
 
   // Update button disabling logic for the new date range
-  const isPreviousDisabled = currentYear === 2025 && currentMonth === 4;
-  const isNextDisabled = currentYear === 2026 && currentMonth === 3;
+  const isPreviousDisabled = currentYear === 2026 && currentMonth === 4;
+  const isNextDisabled = currentYear === 2027 && currentMonth === 3;
 
   if (isLoading) {
     return (
@@ -238,26 +240,33 @@ const CalendarGrid: React.FC = () => {
             <button
               key={idx}
               onClick={() => entry && setSelectedNote(entry.Note)}
-              className={`aspect-square w-full border rounded-lg text-xs sm:text-sm p-1 flex items-start justify-start transition-all duration-150 ${
+              className={`aspect-square w-full border rounded-lg text-xs sm:text-sm p-1 flex flex-col items-start justify-start overflow-hidden transition-all duration-150 ${
                 entry
-                  ? `bg-white hover:shadow-md text-left ${
+                  ? `hover:shadow-md text-left ${
                       entry.Note.toLowerCase().includes("holiday")
-                        ? "bg-red-300 border-red-600"
+                        ? "bg-red-200 border-red-500"
                         : entry.Note == ""
-                        ? ""
-                        : "bg-green-300 border-green-600"
-                    } ${isToday ? "ring-2 ring-blue-500 bg-blue-50" : ""}`
+                        ? "bg-white"
+                        : "bg-green-200 border-green-600"
+                    } ${isToday ? "ring-2 ring-blue-500" : ""}`
                   : "bg-gray-50"
               }`}
             >
               {entry && (
-                <span
-                  className={`font-semibold ${
-                    isToday ? "text-blue-700" : "text-gray-700"
-                  }`}
-                >
-                  {entry.Date}
-                </span>
+                <>
+                  <span
+                    className={`font-semibold ${
+                      isToday ? "text-blue-700" : "text-gray-700"
+                    }`}
+                  >
+                    {entry.Date}
+                  </span>
+                  {entry.Note && (
+                    <span className="hidden sm:block text-[10px] leading-tight text-gray-700 mt-0.5 line-clamp-3">
+                      {entry.Note}
+                    </span>
+                  )}
+                </>
               )}
             </button>
           );

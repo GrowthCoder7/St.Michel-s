@@ -17,6 +17,7 @@ const navItems: NavItem[] = [
       { label: "Mission", path: "/about#mission" },
       { label: "Board Members", path: "/about#board-members" },
       { label: "Staffs", path: "/about#staffs" },
+      { label: "Parent Teacher Association (PTA)", path: "/pta" },
     ],
   },
   {
@@ -135,7 +136,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
 
               {item.children && (
                 <div
-                  className={`absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden transition-all duration-300 origin-top-left ${
+                  className={`absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md overflow-hidden transition-all duration-300 origin-top-left ${
                     activeDropdown === item.label
                       ? "opacity-100 scale-100 visible"
                       : "opacity-0 scale-95 invisible"

@@ -199,16 +199,10 @@ const Footer: React.FC = () => {
           <p>© {currentYear} St. Michel's. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link
-              to="/privacy-policy"
+              to="/rules&reg"
               className="hover:text-accent transition-colors"
             >
-              Privacy Policy
-            </Link>
-            <Link
-              to="/terms-of-service"
-              className="hover:text-accent transition-colors"
-            >
-              Terms of Service
+              Rules & Regulations
             </Link>
             <a
               href="/contact#map-frame"
